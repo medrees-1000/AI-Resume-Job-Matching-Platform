@@ -18,9 +18,13 @@ load_dotenv()
 
 # Import core functions
 from ingestion.process_resume import process_uploaded_resume, process_job_description
+
+# Try to use enhanced versions, fall back to originals if not available
 from ingestion.job_cleaner import extract_requirements_section
-from matching.similarity import calculate_match_score, get_top_matching_chunks
+
 from matching.keyword_matcher import extract_keywords, calculate_keyword_match, get_improvement_suggestions
+
+from matching.similarity import calculate_match_score, get_top_matching_chunks
 from matching.hybrid_scorer import calculate_hybrid_score, generate_score_explanation
 from rag.groq_explainer import generate_match_explanation_groq, generate_simple_explanation_fallback
 
@@ -42,14 +46,19 @@ def render_full_circle_gauge(percent, label, size=150, color="#6366f1", font_siz
                 stroke-dasharray="{circumference}" stroke-dashoffset="{offset}" 
                 stroke-linecap="round" fill="transparent" transform="rotate(-92 50 50)"
                 style="transition: stroke-dashoffset 1s ease-in-out;" />
-            <text x="50" y="54" font-family="'Inter', sans-serif" font-size="{font_size}" font-weight="700" text-anchor="middle" dominant-baseline="middle" fill="#1f2937">{int(percent)}%</text>
+            <text x="50" y="53" font-family="'Inter', sans-serif" font-size="{font_size}" font-weight="700" text-anchor="middle" dominant-baseline="middle" fill="#1f2937">{int(percent)}%</text>
         </svg>
         <div style="font-family: 'Inter', sans-serif; font-weight: 600; color: #6b7280; font-size: 0.85rem; margin-top: -5px;">{label}</div>
     </div>
     """
 
 # --- PAGE CONFIG ---
-st.set_page_config(page_title="AI Resume Matcher", page_icon="🎯", layout="wide")
+st.set_page_config(
+    page_title="ResumeMatch AI | Smart Resume Analyzer", 
+    page_icon="🎯",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
 
 # --- STYLING ---
 st.markdown("""
@@ -138,8 +147,24 @@ with st.sidebar:
 # --- HEADER ---
 st.markdown("""
 <div class="header-container">
-    <p class="main-title">Resume Match Intelligence</p>
-    <p class="sub-title">Semantic Embeddings • Keyword Matching • AI Insights</p>
+    <div style="display: flex; align-items: center; gap: 15px;">
+        <svg width="50" height="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <circle cx="50" cy="50" r="45" fill="url(#logoGrad)" opacity="0.1"/>
+            <path d="M 30 35 L 50 55 L 70 35" stroke="url(#logoGrad)" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M 30 50 L 50 70 L 70 50" stroke="url(#logoGrad)" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="50" cy="50" r="6" fill="url(#logoGrad)"/>
+        </svg>
+        <div>
+            <p class="main-title">ResumeMatch AI</p>
+            <p class="sub-title">Semantic Embeddings • Keyword Matching • AI Insights</p>
+        </div>
+    </div>
 </div>
 """, unsafe_allow_html=True)
 
@@ -268,6 +293,14 @@ if st.button("🚀 Run Match Analysis", use_container_width=True, type="primary"
         job_keywords = extract_keywords(cleaned_job_text)
         keyword_results = calculate_keyword_match(resume_keywords, job_keywords, job_sections)
         
+        # Enhanced debug output
+        resume_tech_skills = resume_keywords.get('technical_skills', set())
+        job_tech_skills = job_keywords.get('technical_skills', set())
+        
+        st.caption(f"🔍 Resume: {len(resume_tech_skills)} skills | Job: {len(job_tech_skills)} skills")
+        if keyword_results.get('total_required_skills'):
+            st.caption(f"📊 Required: {keyword_results['total_required_skills']} | Preferred: {keyword_results.get('total_preferred_skills', 0)}")
+        
         progress_bar.progress(80)
         st.caption("Step 5/5: Generating hybrid score...")
         
@@ -346,18 +379,24 @@ if st.button("🚀 Run Match Analysis", use_container_width=True, type="primary"
     st.markdown("---")
     st.markdown("### 🎯 Skills Analysis")
     
+    # Add debug info
+    with st.expander("🔍 Debug: View extracted skills", expanded=False):
+        st.write("**Resume Keywords:**", resume_keywords if resume_keywords else "None detected")
+        st.write("**Job Keywords:**", job_keywords if job_keywords else "None detected")
+        st.write("**Keyword Results:**", keyword_results)
+    
     col1, col2 = st.columns(2)
     
     with col1:
         st.markdown("**✅ Matched Skills**")
-        matched_skills = score_breakdown["matched_skills"]
+        matched_skills = score_breakdown.get("matched_skills", [])
         if matched_skills:
-            for skill in matched_skills[:10]:
+            for skill in matched_skills[:15]:  # Show up to 15 skills
                 st.markdown(f"✓ {skill}")
-            if len(matched_skills) > 10:
-                st.caption(f"...and {len(matched_skills) - 10} more")
+            if len(matched_skills) > 15:
+                st.caption(f"...and {len(matched_skills) - 15} more")
         else:
-            st.info("No specific technical skills detected")
+            st.info("No technical skills matched. This might indicate:\n- Resume lacks specific technical terms\n- Keyword extraction needs tuning\n- Different terminology used")
     
     with col2:
         st.markdown("**⚠️ Missing Skills**")
@@ -367,16 +406,20 @@ if st.button("🚀 Run Match Analysis", use_container_width=True, type="primary"
         
         if missing_required:
             st.markdown("**🔴 Required (High Priority):**")
-            for skill in missing_required[:5]:
+            for skill in missing_required[:8]:  # Show up to 8
                 st.markdown(f"❌ {skill}")
+            if len(missing_required) > 8:
+                st.caption(f"...and {len(missing_required) - 8} more")
         
         if missing_preferred:
             st.markdown("**🟡 Preferred (Nice to Have):**")
-            for skill in missing_preferred[:3]:
+            for skill in missing_preferred[:5]:  # Show up to 5
                 st.markdown(f"⚠️ {skill}")
+            if len(missing_preferred) > 5:
+                st.caption(f"...and {len(missing_preferred) - 5} more")
         
         if not missing_required and not missing_preferred:
-            st.success("All skills found!")
+            st.success("All required skills found!")
     
     # --- TABS ---
     st.markdown("---")
