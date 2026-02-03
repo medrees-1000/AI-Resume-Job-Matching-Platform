@@ -31,9 +31,6 @@ def render_full_circle_gauge(percent, label, size=150, color="#6366f1", font_siz
     circumference = 2 * 3.14159 * radius
     offset = circumference - (percent / 100) * circumference
     
-    # Adjust vertical position based on size for better centering
-    text_y = 58 if size > 200 else 55
-    
     return f"""
     <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 10px;">
         <svg width="{size}" height="{size}" viewBox="0 0 100 100">
@@ -42,7 +39,7 @@ def render_full_circle_gauge(percent, label, size=150, color="#6366f1", font_siz
                 stroke-dasharray="{circumference}" stroke-dashoffset="{offset}" 
                 stroke-linecap="round" fill="transparent" transform="rotate(-92 50 50)"
                 style="transition: stroke-dashoffset 1s ease-in-out;" />
-            <text x="50" y="54" font-family="'Inter', sans-serif" font-size="{font_size}" font-weight="700" text-anchor="middle" dominant-baseline="middle" fill="#1f2937">{int(percent)}%</text>
+            <text x="50" y="58" font-family="'Inter', sans-serif" font-size="{font_size}" font-weight="700" text-anchor="middle" fill="#1f2937">{int(percent)}%</text>
         </svg>
         <div style="font-family: 'Inter', sans-serif; font-weight: 600; color: #6b7280; font-size: 0.85rem; margin-top: -5px;">{label}</div>
     </div>
@@ -123,8 +120,6 @@ with st.sidebar:
     st.caption("Hybrid Breakdown:")
     st.markdown("- 40% Keyword matching\n- 30% Semantic similarity\n- 20% Experience match\n- 10% Education match")
     
-    st.info("**Note:** This system is optimized for technical roles (Data Science, Engineering, IT, etc.)")
-    
     st.divider()
     
     # GROQ Check
@@ -198,9 +193,28 @@ with col2:
     </div>
     """, unsafe_allow_html=True)
     
+    # Sample job selector
+    sample_jobs = {
+        "Select a sample...": "",
+        "Data Scientist": Path("data/jobs/data_scientist.txt"),
+        "Data Analyst": Path("data/jobs/data_analyst.txt"),
+        "Software Engineer": Path("data/jobs/software_engineer.txt"),
+        "DevOps Engineer": Path("data/jobs/devops_engineer.txt"),
+        "Cybersecurity Specialist": Path("data/jobs/cybersecurity.txt")
+    }
+    
+    selected_sample = st.selectbox("📂 Load sample job (optional):", list(sample_jobs.keys()))
+    
+    # Load sample text
+    default_text = ""
+    if selected_sample != "Select a sample...":
+        job_file = sample_jobs[selected_sample]
+        if job_file.exists():
+            default_text = job_file.read_text()
+    
     job_description = st.text_area(
         "Paste the complete job posting:",
-        value="",
+        value=default_text,
         height=200,
         placeholder="Paste job description here...",
         label_visibility="collapsed"
@@ -295,18 +309,22 @@ if st.button("🚀 Run Match Analysis", use_container_width=True, type="primary"
     # Determine match category based on NEW thresholds
     if hybrid_score >= 0.85:
         match_category = "Excellent Match"
+        match_icon = "🔥"
         badge_class = "excellent"
         gauge_color = "#22c55e"
     elif hybrid_score >= 0.71:
         match_category = "Good Match"
+        match_icon = "👍"
         badge_class = "good"
         gauge_color = "#3b82f6"
     elif hybrid_score >= 0.40:
         match_category = "Fair Match"
+        match_icon = "⚖️"
         badge_class = "fair"
         gauge_color = "#f59e0b"
     else:
         match_category = "Low Match"
+        match_icon = "❌"
         badge_class = "low"
         gauge_color = "#ef4444"
     
@@ -317,10 +335,10 @@ if st.button("🚀 Run Match Analysis", use_container_width=True, type="primary"
     col_center = st.columns([1, 2, 1])
     with col_center[1]:
         st.components.v1.html(
-            render_full_circle_gauge(hybrid_score * 100, "", size=280, color=gauge_color, font_size="22px"), 
-            height=300
+            render_full_circle_gauge(hybrid_score * 100, "", size=260, color=gauge_color, font_size="22px"), 
+            height=280
         )
-        st.markdown(f'<div class="verdict-badge {badge_class}" style="text-align: center;">{match_category}</div>', 
+        st.markdown(f'<div class="verdict-badge {badge_class}" style="text-align: center;">{match_icon} {match_category}</div>', 
                    unsafe_allow_html=True)
     
     st.markdown("### Score Breakdown")
@@ -380,7 +398,7 @@ if st.button("🚀 Run Match Analysis", use_container_width=True, type="primary"
     
     # --- TABS ---
     st.markdown("---")
-    tab1, tab2 = st.tabs(["🤖 AI Explanation", "🔍 Matching Sections"])
+    tab1, tab2, tab3, tab4 = st.tabs(["🤖 AI Explanation", "🔍 Matching Sections", "📋 Full Resume", "🧹 Job Cleaning"])
     
     with tab1:
         st.subheader("AI-Powered Analysis")
@@ -426,6 +444,50 @@ if st.button("🚀 Run Match Analysis", use_container_width=True, type="primary"
                     key=f"chunk_{i}",
                     label_visibility="collapsed"
                 )
+    
+    with tab3:
+        st.subheader("Complete Resume Content")
+        st.text_area(
+            "Full resume text:",
+            resume_result["text"],
+            height=400,
+            label_visibility="collapsed"
+        )
+        
+        st.caption(f"📊 Resume Statistics:")
+        st.caption(f"• Total length: {len(resume_result['text'])} characters")
+        st.caption(f"• Number of chunks: {len(resume_result['chunks'])}")
+        st.caption(f"• Chunks analyzed: {len(top_chunks)}")
+    
+    with tab4:
+        st.subheader("How We Cleaned the Job Description")
+        
+        col1, col2 = st.columns(2)
+        
+        with col1:
+            st.metric("Original", f"{len(job_description)} chars")
+            st.metric("Cleaned", f"{len(cleaned_job_text)} chars")
+            reduction = ((len(job_description) - len(cleaned_job_text)) / len(job_description)) * 100
+            st.metric("Removed", f"{reduction:.0f}%")
+        
+        with col2:
+            st.markdown("**🎯 Kept:**")
+            st.markdown("- Responsibilities")
+            st.markdown("- Requirements")
+            st.markdown("- Skills")
+            
+            st.markdown("**🗑️ Removed:**")
+            st.markdown("- Company info")
+            st.markdown("- Benefits")
+            st.markdown("- Salary")
+        
+        with st.expander("View Cleaned Job Text"):
+            st.text_area(
+                "Cleaned version:",
+                cleaned_job_text,
+                height=300,
+                label_visibility="collapsed"
+            )
 
 # --- FOOTER ---
 st.markdown("---")
