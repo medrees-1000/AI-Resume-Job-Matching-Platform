@@ -54,8 +54,8 @@ def render_full_circle_gauge(percent, label, size=150, color="#6366f1", font_siz
 
 # --- PAGE CONFIG ---
 st.set_page_config(
-    page_title="ResumeMatch AI | Smart Resume Analyzer", 
-    page_icon="🎯",
+    page_title="Nikola AI | Smart Resume Analyzer", 
+    page_icon="💡",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -148,20 +148,22 @@ with st.sidebar:
 st.markdown("""
 <div class="header-container">
     <div style="display: flex; align-items: center; gap: 15px;">
-        <svg width="50" height="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" 
+                stroke="url(#logoGrad)" 
+                stroke-width="2" 
+                fill="url(#logoGrad)" 
+                stroke-linecap="round" 
+                stroke-linejoin="round"/>
             <defs>
                 <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
                     <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
                     <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
                 </linearGradient>
             </defs>
-            <circle cx="50" cy="50" r="45" fill="url(#logoGrad)" opacity="0.1"/>
-            <path d="M 30 35 L 50 55 L 70 35" stroke="url(#logoGrad)" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M 30 50 L 50 70 L 70 50" stroke="url(#logoGrad)" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="50" cy="50" r="6" fill="url(#logoGrad)"/>
         </svg>
         <div>
-            <p class="main-title">ResumeMatch AI</p>
+            <p class="main-title">Nikola AI</p>
             <p class="sub-title">Semantic Embeddings • Keyword Matching • AI Insights</p>
         </div>
     </div>
