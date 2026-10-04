@@ -4,14 +4,13 @@ Replaces the old batch ingestion system.
 """
 
 from pathlib import Path
-from pathlib import Path
 import sys
 
 # Add parent directory to path for imports
 parent_dir = Path(__file__).parent.parent
 sys.path.append(str(parent_dir))
 
-from ingestion.pdf_parser import extract_text_from_pdf
+from ingestion.pdf_parser import extract_text_from_pdf, UnreliableExtractionError
 from ingestion.chunking import chunk_text
 from sentence_transformers import SentenceTransformer
 
@@ -75,6 +74,12 @@ def process_uploaded_resume(pdf_file):
             "error": None
         }
         
+    except UnreliableExtractionError as e:
+        return {
+            "success": False,
+            "extraction_warning": True,
+            "error": str(e)
+        }
     except Exception as e:
         return {
             "success": False,

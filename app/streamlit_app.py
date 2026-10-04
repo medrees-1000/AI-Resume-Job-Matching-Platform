@@ -256,6 +256,10 @@ if st.button("🚀 Run Match Analysis", use_container_width=True, type="primary"
         
         resume_result = process_uploaded_resume(uploaded_file)
         
+        if resume_result.get("extraction_warning"):
+            st.warning(f"⚠️ {resume_result['error']} Scoring was skipped so you don't get a misleadingly low result.")
+            st.stop()
+
         if not resume_result["success"]:
             st.error(f"❌ Resume processing failed: {resume_result['error']}")
             st.stop()
