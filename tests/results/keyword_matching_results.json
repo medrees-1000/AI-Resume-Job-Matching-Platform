@@ -1,0 +1,2685 @@
+{
+  "skipped_resumes": {},
+  "results": [
+    {
+      "resume": "2024_10_19_CloudResumeAWS.pdf",
+      "job": "cybersecurity",
+      "keyword_score": 0.588,
+      "technical_score": 0.44,
+      "job_skills_found": 3,
+      "job_too_short": true,
+      "matched_skills": [
+        "cybersecurity",
+        "security"
+      ],
+      "missing_skills": [
+        "networking"
+      ]
+    },
+    {
+      "resume": "2024_10_19_CloudResumeAWS.pdf",
+      "job": "data_analyst",
+      "keyword_score": 0.399,
+      "technical_score": 0.17,
+      "job_skills_found": 10,
+      "job_too_short": false,
+      "matched_skills": [
+        "python",
+        "r"
+      ],
+      "missing_skills": [
+        "dashboards",
+        "data analysis",
+        "data visualization",
+        "excel",
+        "power bi",
+        "sql",
+        "statistical analysis",
+        "tableau"
+      ]
+    },
+    {
+      "resume": "2024_10_19_CloudResumeAWS.pdf",
+      "job": "data_scientist",
+      "keyword_score": 0.467,
+      "technical_score": 0.2671,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "aws",
+        "python"
+      ],
+      "missing_skills": [
+        "azure",
+        "dashboards",
+        "data visualization",
+        "deep learning",
+        "gcp",
+        "machine learning",
+        "nlp",
+        "pytorch"
+      ]
+    },
+    {
+      "resume": "2024_10_19_CloudResumeAWS.pdf",
+      "job": "devops_engineer",
+      "keyword_score": 0.637,
+      "technical_score": 0.51,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "aws",
+        "ci/cd",
+        "docker",
+        "monitoring",
+        "python",
+        "security",
+        "terraform"
+      ],
+      "missing_skills": [
+        "ansible",
+        "azure",
+        "bash",
+        "gcp",
+        "grafana",
+        "kubernetes",
+        "prometheus"
+      ]
+    },
+    {
+      "resume": "2024_10_19_CloudResumeAWS.pdf",
+      "job": "software_engineer",
+      "keyword_score": 0.7163,
+      "technical_score": 0.6233,
+      "job_skills_found": 15,
+      "job_too_short": false,
+      "matched_skills": [
+        "api",
+        "apis",
+        "aws",
+        "ci/cd",
+        "database",
+        "databases",
+        "docker",
+        "git"
+      ],
+      "missing_skills": [
+        "azure",
+        "gcp",
+        "java",
+        "kubernetes",
+        "rest api"
+      ]
+    },
+    {
+      "resume": "Abir Resume Data Analyst.pdf",
+      "job": "cybersecurity",
+      "keyword_score": 0.476,
+      "technical_score": 0.28,
+      "job_skills_found": 3,
+      "job_too_short": true,
+      "matched_skills": [
+        "security"
+      ],
+      "missing_skills": [
+        "cybersecurity",
+        "networking"
+      ]
+    },
+    {
+      "resume": "Abir Resume Data Analyst.pdf",
+      "job": "data_analyst",
+      "keyword_score": 0.77,
+      "technical_score": 0.7,
+      "job_skills_found": 10,
+      "job_too_short": false,
+      "matched_skills": [
+        "dashboards",
+        "data analysis",
+        "excel",
+        "power bi",
+        "python",
+        "sql",
+        "statistical analysis"
+      ],
+      "missing_skills": [
+        "data visualization",
+        "r",
+        "tableau"
+      ]
+    },
+    {
+      "resume": "Abir Resume Data Analyst.pdf",
+      "job": "data_scientist",
+      "keyword_score": 0.535,
+      "technical_score": 0.3643,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "dashboards",
+        "machine learning",
+        "python",
+        "sql"
+      ],
+      "missing_skills": [
+        "aws",
+        "azure",
+        "data visualization",
+        "deep learning",
+        "gcp",
+        "nlp",
+        "pytorch",
+        "scikit-learn"
+      ]
+    },
+    {
+      "resume": "Abir Resume Data Analyst.pdf",
+      "job": "devops_engineer",
+      "keyword_score": 0.501,
+      "technical_score": 0.3157,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "monitoring",
+        "python",
+        "security"
+      ],
+      "missing_skills": [
+        "ansible",
+        "aws",
+        "azure",
+        "bash",
+        "ci/cd",
+        "docker",
+        "gcp",
+        "grafana"
+      ]
+    },
+    {
+      "resume": "Abir Resume Data Analyst.pdf",
+      "job": "software_engineer",
+      "keyword_score": 0.4942,
+      "technical_score": 0.306,
+      "job_skills_found": 15,
+      "job_too_short": false,
+      "matched_skills": [
+        "database",
+        "databases",
+        "python"
+      ],
+      "missing_skills": [
+        "api",
+        "apis",
+        "aws",
+        "azure",
+        "ci/cd",
+        "docker",
+        "gcp",
+        "git"
+      ]
+    },
+    {
+      "resume": "AshwinGopalsamy_Resume.pdf",
+      "job": "cybersecurity",
+      "keyword_score": 0.364,
+      "technical_score": 0.12,
+      "job_skills_found": 3,
+      "job_too_short": true,
+      "matched_skills": [],
+      "missing_skills": [
+        "cybersecurity",
+        "networking",
+        "security"
+      ]
+    },
+    {
+      "resume": "AshwinGopalsamy_Resume.pdf",
+      "job": "data_analyst",
+      "keyword_score": 0.3395,
+      "technical_score": 0.085,
+      "job_skills_found": 10,
+      "job_too_short": false,
+      "matched_skills": [
+        "python"
+      ],
+      "missing_skills": [
+        "dashboards",
+        "data analysis",
+        "data visualization",
+        "excel",
+        "power bi",
+        "r",
+        "sql",
+        "statistical analysis"
+      ]
+    },
+    {
+      "resume": "AshwinGopalsamy_Resume.pdf",
+      "job": "data_scientist",
+      "keyword_score": 0.535,
+      "technical_score": 0.3643,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "aws",
+        "azure",
+        "machine learning",
+        "python"
+      ],
+      "missing_skills": [
+        "dashboards",
+        "data visualization",
+        "deep learning",
+        "gcp",
+        "nlp",
+        "pytorch",
+        "scikit-learn",
+        "sql"
+      ]
+    },
+    {
+      "resume": "AshwinGopalsamy_Resume.pdf",
+      "job": "devops_engineer",
+      "keyword_score": 0.705,
+      "technical_score": 0.6071,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "aws",
+        "azure",
+        "ci/cd",
+        "docker",
+        "grafana",
+        "kubernetes",
+        "prometheus",
+        "python"
+      ],
+      "missing_skills": [
+        "ansible",
+        "bash",
+        "gcp",
+        "monitoring",
+        "security"
+      ]
+    },
+    {
+      "resume": "AshwinGopalsamy_Resume.pdf",
+      "job": "software_engineer",
+      "keyword_score": 0.6846,
+      "technical_score": 0.578,
+      "job_skills_found": 15,
+      "job_too_short": false,
+      "matched_skills": [
+        "aws",
+        "azure",
+        "ci/cd",
+        "database",
+        "databases",
+        "docker",
+        "java",
+        "kubernetes"
+      ],
+      "missing_skills": [
+        "api",
+        "apis",
+        "gcp",
+        "git",
+        "rest api",
+        "version control"
+      ]
+    },
+    {
+      "resume": "CV.pdf",
+      "job": "cybersecurity",
+      "keyword_score": 0.364,
+      "technical_score": 0.12,
+      "job_skills_found": 3,
+      "job_too_short": true,
+      "matched_skills": [],
+      "missing_skills": [
+        "cybersecurity",
+        "networking",
+        "security"
+      ]
+    },
+    {
+      "resume": "CV.pdf",
+      "job": "data_analyst",
+      "keyword_score": 0.399,
+      "technical_score": 0.17,
+      "job_skills_found": 10,
+      "job_too_short": false,
+      "matched_skills": [
+        "python",
+        "r"
+      ],
+      "missing_skills": [
+        "dashboards",
+        "data analysis",
+        "data visualization",
+        "excel",
+        "power bi",
+        "sql",
+        "statistical analysis",
+        "tableau"
+      ]
+    },
+    {
+      "resume": "CV.pdf",
+      "job": "data_scientist",
+      "keyword_score": 0.467,
+      "technical_score": 0.2671,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "aws",
+        "python"
+      ],
+      "missing_skills": [
+        "azure",
+        "dashboards",
+        "data visualization",
+        "deep learning",
+        "gcp",
+        "machine learning",
+        "nlp",
+        "pytorch"
+      ]
+    },
+    {
+      "resume": "CV.pdf",
+      "job": "devops_engineer",
+      "keyword_score": 0.603,
+      "technical_score": 0.4614,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "aws",
+        "ci/cd",
+        "docker",
+        "kubernetes",
+        "python",
+        "terraform"
+      ],
+      "missing_skills": [
+        "ansible",
+        "azure",
+        "bash",
+        "gcp",
+        "grafana",
+        "monitoring",
+        "prometheus",
+        "security"
+      ]
+    },
+    {
+      "resume": "CV.pdf",
+      "job": "software_engineer",
+      "keyword_score": 0.6846,
+      "technical_score": 0.578,
+      "job_skills_found": 15,
+      "job_too_short": false,
+      "matched_skills": [
+        "api",
+        "apis",
+        "aws",
+        "ci/cd",
+        "database",
+        "databases",
+        "docker",
+        "kubernetes"
+      ],
+      "missing_skills": [
+        "azure",
+        "gcp",
+        "git",
+        "java",
+        "rest api",
+        "version control"
+      ]
+    },
+    {
+      "resume": "DiwasPuri_Resume.pdf",
+      "job": "cybersecurity",
+      "keyword_score": 0.364,
+      "technical_score": 0.12,
+      "job_skills_found": 3,
+      "job_too_short": true,
+      "matched_skills": [],
+      "missing_skills": [
+        "cybersecurity",
+        "networking",
+        "security"
+      ]
+    },
+    {
+      "resume": "DiwasPuri_Resume.pdf",
+      "job": "data_analyst",
+      "keyword_score": 0.84,
+      "technical_score": 0.8,
+      "job_skills_found": 10,
+      "job_too_short": false,
+      "matched_skills": [
+        "dashboards",
+        "excel",
+        "power bi",
+        "python",
+        "r",
+        "sql",
+        "statistical analysis",
+        "tableau"
+      ],
+      "missing_skills": [
+        "data analysis",
+        "data visualization"
+      ]
+    },
+    {
+      "resume": "DiwasPuri_Resume.pdf",
+      "job": "data_scientist",
+      "keyword_score": 0.705,
+      "technical_score": 0.6071,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "aws",
+        "dashboards",
+        "machine learning",
+        "nlp",
+        "python",
+        "pytorch",
+        "scikit-learn",
+        "sql"
+      ],
+      "missing_skills": [
+        "azure",
+        "data visualization",
+        "deep learning",
+        "gcp",
+        "tensorflow"
+      ]
+    },
+    {
+      "resume": "DiwasPuri_Resume.pdf",
+      "job": "devops_engineer",
+      "keyword_score": 0.535,
+      "technical_score": 0.3643,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "aws",
+        "bash",
+        "ci/cd",
+        "python"
+      ],
+      "missing_skills": [
+        "ansible",
+        "azure",
+        "docker",
+        "gcp",
+        "grafana",
+        "kubernetes",
+        "monitoring",
+        "prometheus"
+      ]
+    },
+    {
+      "resume": "DiwasPuri_Resume.pdf",
+      "job": "software_engineer",
+      "keyword_score": 0.6846,
+      "technical_score": 0.578,
+      "job_skills_found": 15,
+      "job_too_short": false,
+      "matched_skills": [
+        "api",
+        "apis",
+        "aws",
+        "ci/cd",
+        "database",
+        "databases",
+        "git",
+        "python"
+      ],
+      "missing_skills": [
+        "azure",
+        "docker",
+        "gcp",
+        "java",
+        "kubernetes",
+        "version control"
+      ]
+    },
+    {
+      "resume": "Fateme-Jadidi-CVFeb2025.pdf",
+      "job": "cybersecurity",
+      "keyword_score": 0.364,
+      "technical_score": 0.12,
+      "job_skills_found": 3,
+      "job_too_short": true,
+      "matched_skills": [],
+      "missing_skills": [
+        "cybersecurity",
+        "networking",
+        "security"
+      ]
+    },
+    {
+      "resume": "Fateme-Jadidi-CVFeb2025.pdf",
+      "job": "data_analyst",
+      "keyword_score": 0.77,
+      "technical_score": 0.7,
+      "job_skills_found": 10,
+      "job_too_short": false,
+      "matched_skills": [
+        "dashboards",
+        "data analysis",
+        "data visualization",
+        "power bi",
+        "python",
+        "sql",
+        "statistical analysis"
+      ],
+      "missing_skills": [
+        "excel",
+        "r",
+        "tableau"
+      ]
+    },
+    {
+      "resume": "Fateme-Jadidi-CVFeb2025.pdf",
+      "job": "data_scientist",
+      "keyword_score": 0.739,
+      "technical_score": 0.6557,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "aws",
+        "dashboards",
+        "data visualization",
+        "deep learning",
+        "machine learning",
+        "python",
+        "pytorch",
+        "scikit-learn"
+      ],
+      "missing_skills": [
+        "azure",
+        "gcp",
+        "nlp",
+        "statistics"
+      ]
+    },
+    {
+      "resume": "Fateme-Jadidi-CVFeb2025.pdf",
+      "job": "devops_engineer",
+      "keyword_score": 0.501,
+      "technical_score": 0.3157,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "aws",
+        "docker",
+        "python"
+      ],
+      "missing_skills": [
+        "ansible",
+        "azure",
+        "bash",
+        "ci/cd",
+        "gcp",
+        "grafana",
+        "kubernetes",
+        "monitoring"
+      ]
+    },
+    {
+      "resume": "Fateme-Jadidi-CVFeb2025.pdf",
+      "job": "software_engineer",
+      "keyword_score": 0.5894,
+      "technical_score": 0.442,
+      "job_skills_found": 15,
+      "job_too_short": false,
+      "matched_skills": [
+        "api",
+        "apis",
+        "aws",
+        "docker",
+        "git",
+        "python"
+      ],
+      "missing_skills": [
+        "azure",
+        "ci/cd",
+        "database",
+        "databases",
+        "gcp",
+        "java",
+        "kubernetes",
+        "rest api"
+      ]
+    },
+    {
+      "resume": "Krishna's-Resume.pdf",
+      "job": "cybersecurity",
+      "keyword_score": 0.476,
+      "technical_score": 0.28,
+      "job_skills_found": 3,
+      "job_too_short": true,
+      "matched_skills": [
+        "security"
+      ],
+      "missing_skills": [
+        "cybersecurity",
+        "networking"
+      ]
+    },
+    {
+      "resume": "Krishna's-Resume.pdf",
+      "job": "data_analyst",
+      "keyword_score": 0.3395,
+      "technical_score": 0.085,
+      "job_skills_found": 10,
+      "job_too_short": false,
+      "matched_skills": [
+        "python"
+      ],
+      "missing_skills": [
+        "dashboards",
+        "data analysis",
+        "data visualization",
+        "excel",
+        "power bi",
+        "r",
+        "sql",
+        "statistical analysis"
+      ]
+    },
+    {
+      "resume": "Krishna's-Resume.pdf",
+      "job": "data_scientist",
+      "keyword_score": 0.535,
+      "technical_score": 0.3643,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "aws",
+        "azure",
+        "gcp",
+        "python"
+      ],
+      "missing_skills": [
+        "dashboards",
+        "data visualization",
+        "deep learning",
+        "machine learning",
+        "nlp",
+        "pytorch",
+        "scikit-learn",
+        "sql"
+      ]
+    },
+    {
+      "resume": "Krishna's-Resume.pdf",
+      "job": "devops_engineer",
+      "keyword_score": 0.739,
+      "technical_score": 0.6557,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "ansible",
+        "aws",
+        "azure",
+        "docker",
+        "gcp",
+        "kubernetes",
+        "prometheus",
+        "python"
+      ],
+      "missing_skills": [
+        "bash",
+        "ci/cd",
+        "grafana",
+        "monitoring"
+      ]
+    },
+    {
+      "resume": "Krishna's-Resume.pdf",
+      "job": "software_engineer",
+      "keyword_score": 0.6211,
+      "technical_score": 0.4873,
+      "job_skills_found": 15,
+      "job_too_short": false,
+      "matched_skills": [
+        "aws",
+        "azure",
+        "docker",
+        "gcp",
+        "git",
+        "kubernetes",
+        "python"
+      ],
+      "missing_skills": [
+        "api",
+        "apis",
+        "ci/cd",
+        "database",
+        "databases",
+        "java",
+        "rest api",
+        "version control"
+      ]
+    },
+    {
+      "resume": "Nadeem_Abdul_Resume.pdf",
+      "job": "cybersecurity",
+      "keyword_score": 0.364,
+      "technical_score": 0.12,
+      "job_skills_found": 3,
+      "job_too_short": true,
+      "matched_skills": [],
+      "missing_skills": [
+        "cybersecurity",
+        "networking",
+        "security"
+      ]
+    },
+    {
+      "resume": "Nadeem_Abdul_Resume.pdf",
+      "job": "data_analyst",
+      "keyword_score": 0.91,
+      "technical_score": 0.9,
+      "job_skills_found": 10,
+      "job_too_short": false,
+      "matched_skills": [
+        "dashboards",
+        "data analysis",
+        "data visualization",
+        "excel",
+        "power bi",
+        "python",
+        "r",
+        "sql"
+      ],
+      "missing_skills": [
+        "statistical analysis"
+      ]
+    },
+    {
+      "resume": "Nadeem_Abdul_Resume.pdf",
+      "job": "data_scientist",
+      "keyword_score": 0.637,
+      "technical_score": 0.51,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "azure",
+        "dashboards",
+        "data visualization",
+        "machine learning",
+        "nlp",
+        "python",
+        "sql"
+      ],
+      "missing_skills": [
+        "aws",
+        "deep learning",
+        "gcp",
+        "pytorch",
+        "scikit-learn",
+        "statistics",
+        "tensorflow"
+      ]
+    },
+    {
+      "resume": "Nadeem_Abdul_Resume.pdf",
+      "job": "devops_engineer",
+      "keyword_score": 0.501,
+      "technical_score": 0.3157,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "azure",
+        "monitoring",
+        "python"
+      ],
+      "missing_skills": [
+        "ansible",
+        "aws",
+        "bash",
+        "ci/cd",
+        "docker",
+        "gcp",
+        "grafana",
+        "kubernetes"
+      ]
+    },
+    {
+      "resume": "Nadeem_Abdul_Resume.pdf",
+      "job": "software_engineer",
+      "keyword_score": 0.6529,
+      "technical_score": 0.5327,
+      "job_skills_found": 15,
+      "job_too_short": false,
+      "matched_skills": [
+        "api",
+        "apis",
+        "azure",
+        "database",
+        "databases",
+        "git",
+        "python",
+        "version control"
+      ],
+      "missing_skills": [
+        "aws",
+        "ci/cd",
+        "docker",
+        "gcp",
+        "java",
+        "kubernetes",
+        "rest api"
+      ]
+    },
+    {
+      "resume": "Olena_Avramenko_CV_EN.pdf",
+      "job": "cybersecurity",
+      "keyword_score": 0.364,
+      "technical_score": 0.12,
+      "job_skills_found": 3,
+      "job_too_short": true,
+      "matched_skills": [],
+      "missing_skills": [
+        "cybersecurity",
+        "networking",
+        "security"
+      ]
+    },
+    {
+      "resume": "Olena_Avramenko_CV_EN.pdf",
+      "job": "data_analyst",
+      "keyword_score": 0.77,
+      "technical_score": 0.7,
+      "job_skills_found": 10,
+      "job_too_short": false,
+      "matched_skills": [
+        "dashboards",
+        "data visualization",
+        "excel",
+        "power bi",
+        "python",
+        "sql",
+        "tableau"
+      ],
+      "missing_skills": [
+        "data analysis",
+        "r",
+        "statistical analysis"
+      ]
+    },
+    {
+      "resume": "Olena_Avramenko_CV_EN.pdf",
+      "job": "data_scientist",
+      "keyword_score": 0.535,
+      "technical_score": 0.3643,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "dashboards",
+        "data visualization",
+        "python",
+        "sql"
+      ],
+      "missing_skills": [
+        "aws",
+        "azure",
+        "deep learning",
+        "gcp",
+        "machine learning",
+        "nlp",
+        "pytorch",
+        "scikit-learn"
+      ]
+    },
+    {
+      "resume": "Olena_Avramenko_CV_EN.pdf",
+      "job": "devops_engineer",
+      "keyword_score": 0.433,
+      "technical_score": 0.2186,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "python"
+      ],
+      "missing_skills": [
+        "ansible",
+        "aws",
+        "azure",
+        "bash",
+        "ci/cd",
+        "docker",
+        "gcp",
+        "grafana"
+      ]
+    },
+    {
+      "resume": "Olena_Avramenko_CV_EN.pdf",
+      "job": "software_engineer",
+      "keyword_score": 0.4307,
+      "technical_score": 0.2153,
+      "job_skills_found": 15,
+      "job_too_short": false,
+      "matched_skills": [
+        "python"
+      ],
+      "missing_skills": [
+        "api",
+        "apis",
+        "aws",
+        "azure",
+        "ci/cd",
+        "database",
+        "databases",
+        "docker"
+      ]
+    },
+    {
+      "resume": "Rakesh_ML_Resume.pdf",
+      "job": "cybersecurity",
+      "keyword_score": 0.476,
+      "technical_score": 0.28,
+      "job_skills_found": 3,
+      "job_too_short": true,
+      "matched_skills": [
+        "security"
+      ],
+      "missing_skills": [
+        "cybersecurity",
+        "networking"
+      ]
+    },
+    {
+      "resume": "Rakesh_ML_Resume.pdf",
+      "job": "data_analyst",
+      "keyword_score": 0.518,
+      "technical_score": 0.34,
+      "job_skills_found": 10,
+      "job_too_short": false,
+      "matched_skills": [
+        "data analysis",
+        "data visualization",
+        "python",
+        "sql"
+      ],
+      "missing_skills": [
+        "dashboards",
+        "excel",
+        "power bi",
+        "r",
+        "statistical analysis",
+        "tableau"
+      ]
+    },
+    {
+      "resume": "Rakesh_ML_Resume.pdf",
+      "job": "data_scientist",
+      "keyword_score": 0.705,
+      "technical_score": 0.6071,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "azure",
+        "data visualization",
+        "deep learning",
+        "machine learning",
+        "nlp",
+        "python",
+        "sql",
+        "statistics"
+      ],
+      "missing_skills": [
+        "aws",
+        "dashboards",
+        "gcp",
+        "pytorch",
+        "scikit-learn"
+      ]
+    },
+    {
+      "resume": "Rakesh_ML_Resume.pdf",
+      "job": "devops_engineer",
+      "keyword_score": 0.569,
+      "technical_score": 0.4129,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "azure",
+        "docker",
+        "kubernetes",
+        "python",
+        "security"
+      ],
+      "missing_skills": [
+        "ansible",
+        "aws",
+        "bash",
+        "ci/cd",
+        "gcp",
+        "grafana",
+        "monitoring",
+        "prometheus"
+      ]
+    },
+    {
+      "resume": "Rakesh_ML_Resume.pdf",
+      "job": "software_engineer",
+      "keyword_score": 0.6846,
+      "technical_score": 0.578,
+      "job_skills_found": 15,
+      "job_too_short": false,
+      "matched_skills": [
+        "api",
+        "apis",
+        "azure",
+        "docker",
+        "git",
+        "java",
+        "kubernetes",
+        "python"
+      ],
+      "missing_skills": [
+        "aws",
+        "ci/cd",
+        "database",
+        "databases",
+        "gcp",
+        "version control"
+      ]
+    },
+    {
+      "resume": "Sajid_Rehman_Resume1.pdf",
+      "job": "cybersecurity",
+      "keyword_score": 0.364,
+      "technical_score": 0.12,
+      "job_skills_found": 3,
+      "job_too_short": true,
+      "matched_skills": [],
+      "missing_skills": [
+        "cybersecurity",
+        "networking",
+        "security"
+      ]
+    },
+    {
+      "resume": "Sajid_Rehman_Resume1.pdf",
+      "job": "data_analyst",
+      "keyword_score": 0.399,
+      "technical_score": 0.17,
+      "job_skills_found": 10,
+      "job_too_short": false,
+      "matched_skills": [
+        "python",
+        "sql"
+      ],
+      "missing_skills": [
+        "dashboards",
+        "data analysis",
+        "data visualization",
+        "excel",
+        "power bi",
+        "r",
+        "statistical analysis",
+        "tableau"
+      ]
+    },
+    {
+      "resume": "Sajid_Rehman_Resume1.pdf",
+      "job": "data_scientist",
+      "keyword_score": 0.671,
+      "technical_score": 0.5586,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "deep learning",
+        "machine learning",
+        "nlp",
+        "python",
+        "pytorch",
+        "scikit-learn",
+        "sql",
+        "tensorflow"
+      ],
+      "missing_skills": [
+        "aws",
+        "azure",
+        "dashboards",
+        "data visualization",
+        "gcp",
+        "statistics"
+      ]
+    },
+    {
+      "resume": "Sajid_Rehman_Resume1.pdf",
+      "job": "devops_engineer",
+      "keyword_score": 0.467,
+      "technical_score": 0.2671,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "docker",
+        "python"
+      ],
+      "missing_skills": [
+        "ansible",
+        "aws",
+        "azure",
+        "bash",
+        "ci/cd",
+        "gcp",
+        "grafana",
+        "kubernetes"
+      ]
+    },
+    {
+      "resume": "Sajid_Rehman_Resume1.pdf",
+      "job": "software_engineer",
+      "keyword_score": 0.4942,
+      "technical_score": 0.306,
+      "job_skills_found": 15,
+      "job_too_short": false,
+      "matched_skills": [
+        "docker",
+        "git",
+        "python"
+      ],
+      "missing_skills": [
+        "api",
+        "apis",
+        "aws",
+        "azure",
+        "ci/cd",
+        "database",
+        "databases",
+        "gcp"
+      ]
+    },
+    {
+      "resume": "TinNguyen.pdf",
+      "job": "cybersecurity",
+      "keyword_score": 0.364,
+      "technical_score": 0.12,
+      "job_skills_found": 3,
+      "job_too_short": true,
+      "matched_skills": [],
+      "missing_skills": [
+        "cybersecurity",
+        "networking",
+        "security"
+      ]
+    },
+    {
+      "resume": "TinNguyen.pdf",
+      "job": "data_analyst",
+      "keyword_score": 0.399,
+      "technical_score": 0.17,
+      "job_skills_found": 10,
+      "job_too_short": false,
+      "matched_skills": [
+        "python",
+        "sql"
+      ],
+      "missing_skills": [
+        "dashboards",
+        "data analysis",
+        "data visualization",
+        "excel",
+        "power bi",
+        "r",
+        "statistical analysis",
+        "tableau"
+      ]
+    },
+    {
+      "resume": "TinNguyen.pdf",
+      "job": "data_scientist",
+      "keyword_score": 0.501,
+      "technical_score": 0.3157,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "machine learning",
+        "python",
+        "sql"
+      ],
+      "missing_skills": [
+        "aws",
+        "azure",
+        "dashboards",
+        "data visualization",
+        "deep learning",
+        "gcp",
+        "nlp",
+        "pytorch"
+      ]
+    },
+    {
+      "resume": "TinNguyen.pdf",
+      "job": "devops_engineer",
+      "keyword_score": 0.433,
+      "technical_score": 0.2186,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "python"
+      ],
+      "missing_skills": [
+        "ansible",
+        "aws",
+        "azure",
+        "bash",
+        "ci/cd",
+        "docker",
+        "gcp",
+        "grafana"
+      ]
+    },
+    {
+      "resume": "TinNguyen.pdf",
+      "job": "software_engineer",
+      "keyword_score": 0.4307,
+      "technical_score": 0.2153,
+      "job_skills_found": 15,
+      "job_too_short": false,
+      "matched_skills": [
+        "python"
+      ],
+      "missing_skills": [
+        "api",
+        "apis",
+        "aws",
+        "azure",
+        "ci/cd",
+        "database",
+        "databases",
+        "docker"
+      ]
+    },
+    {
+      "resume": "VicenteViera.pdf",
+      "job": "cybersecurity",
+      "keyword_score": 0.364,
+      "technical_score": 0.12,
+      "job_skills_found": 3,
+      "job_too_short": true,
+      "matched_skills": [],
+      "missing_skills": [
+        "cybersecurity",
+        "networking",
+        "security"
+      ]
+    },
+    {
+      "resume": "VicenteViera.pdf",
+      "job": "data_analyst",
+      "keyword_score": 0.3395,
+      "technical_score": 0.085,
+      "job_skills_found": 10,
+      "job_too_short": false,
+      "matched_skills": [
+        "dashboards"
+      ],
+      "missing_skills": [
+        "data analysis",
+        "data visualization",
+        "excel",
+        "power bi",
+        "python",
+        "r",
+        "sql",
+        "statistical analysis"
+      ]
+    },
+    {
+      "resume": "VicenteViera.pdf",
+      "job": "data_scientist",
+      "keyword_score": 0.433,
+      "technical_score": 0.2186,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "dashboards"
+      ],
+      "missing_skills": [
+        "aws",
+        "azure",
+        "data visualization",
+        "deep learning",
+        "gcp",
+        "machine learning",
+        "nlp",
+        "python"
+      ]
+    },
+    {
+      "resume": "VicenteViera.pdf",
+      "job": "devops_engineer",
+      "keyword_score": 0.399,
+      "technical_score": 0.17,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [],
+      "missing_skills": [
+        "ansible",
+        "aws",
+        "azure",
+        "bash",
+        "ci/cd",
+        "docker",
+        "gcp",
+        "grafana"
+      ]
+    },
+    {
+      "resume": "VicenteViera.pdf",
+      "job": "software_engineer",
+      "keyword_score": 0.4307,
+      "technical_score": 0.2153,
+      "job_skills_found": 15,
+      "job_too_short": false,
+      "matched_skills": [
+        "git"
+      ],
+      "missing_skills": [
+        "api",
+        "apis",
+        "aws",
+        "azure",
+        "ci/cd",
+        "database",
+        "databases",
+        "docker"
+      ]
+    },
+    {
+      "resume": "a31034a1366155ce1195daaa81712b4e1550870678.pdf",
+      "job": "cybersecurity",
+      "keyword_score": 0.588,
+      "technical_score": 0.44,
+      "job_skills_found": 3,
+      "job_too_short": true,
+      "matched_skills": [
+        "cybersecurity",
+        "security"
+      ],
+      "missing_skills": [
+        "networking"
+      ]
+    },
+    {
+      "resume": "a31034a1366155ce1195daaa81712b4e1550870678.pdf",
+      "job": "data_analyst",
+      "keyword_score": 0.28,
+      "technical_score": 0.0,
+      "job_skills_found": 10,
+      "job_too_short": false,
+      "matched_skills": [],
+      "missing_skills": [
+        "dashboards",
+        "data analysis",
+        "data visualization",
+        "excel",
+        "power bi",
+        "python",
+        "r",
+        "sql"
+      ]
+    },
+    {
+      "resume": "a31034a1366155ce1195daaa81712b4e1550870678.pdf",
+      "job": "data_scientist",
+      "keyword_score": 0.399,
+      "technical_score": 0.17,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [],
+      "missing_skills": [
+        "aws",
+        "azure",
+        "dashboards",
+        "data visualization",
+        "deep learning",
+        "gcp",
+        "machine learning",
+        "nlp"
+      ]
+    },
+    {
+      "resume": "a31034a1366155ce1195daaa81712b4e1550870678.pdf",
+      "job": "devops_engineer",
+      "keyword_score": 0.467,
+      "technical_score": 0.2671,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "monitoring",
+        "security"
+      ],
+      "missing_skills": [
+        "ansible",
+        "aws",
+        "azure",
+        "bash",
+        "ci/cd",
+        "docker",
+        "gcp",
+        "grafana"
+      ]
+    },
+    {
+      "resume": "a31034a1366155ce1195daaa81712b4e1550870678.pdf",
+      "job": "software_engineer",
+      "keyword_score": 0.4625,
+      "technical_score": 0.2607,
+      "job_skills_found": 15,
+      "job_too_short": false,
+      "matched_skills": [
+        "database",
+        "databases"
+      ],
+      "missing_skills": [
+        "api",
+        "apis",
+        "aws",
+        "azure",
+        "ci/cd",
+        "docker",
+        "gcp",
+        "git"
+      ]
+    },
+    {
+      "resume": "cloud-devops-engineer-1678286366.pdf",
+      "job": "cybersecurity",
+      "keyword_score": 0.476,
+      "technical_score": 0.28,
+      "job_skills_found": 3,
+      "job_too_short": true,
+      "matched_skills": [
+        "security"
+      ],
+      "missing_skills": [
+        "cybersecurity",
+        "networking"
+      ]
+    },
+    {
+      "resume": "cloud-devops-engineer-1678286366.pdf",
+      "job": "data_analyst",
+      "keyword_score": 0.28,
+      "technical_score": 0.0,
+      "job_skills_found": 10,
+      "job_too_short": false,
+      "matched_skills": [],
+      "missing_skills": [
+        "dashboards",
+        "data analysis",
+        "data visualization",
+        "excel",
+        "power bi",
+        "python",
+        "r",
+        "sql"
+      ]
+    },
+    {
+      "resume": "cloud-devops-engineer-1678286366.pdf",
+      "job": "data_scientist",
+      "keyword_score": 0.433,
+      "technical_score": 0.2186,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "aws"
+      ],
+      "missing_skills": [
+        "azure",
+        "dashboards",
+        "data visualization",
+        "deep learning",
+        "gcp",
+        "machine learning",
+        "nlp",
+        "python"
+      ]
+    },
+    {
+      "resume": "cloud-devops-engineer-1678286366.pdf",
+      "job": "devops_engineer",
+      "keyword_score": 0.637,
+      "technical_score": 0.51,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "ansible",
+        "aws",
+        "ci/cd",
+        "monitoring",
+        "prometheus",
+        "security",
+        "terraform"
+      ],
+      "missing_skills": [
+        "azure",
+        "bash",
+        "docker",
+        "gcp",
+        "grafana",
+        "kubernetes",
+        "python"
+      ]
+    },
+    {
+      "resume": "cloud-devops-engineer-1678286366.pdf",
+      "job": "software_engineer",
+      "keyword_score": 0.4625,
+      "technical_score": 0.2607,
+      "job_skills_found": 15,
+      "job_too_short": false,
+      "matched_skills": [
+        "aws",
+        "ci/cd"
+      ],
+      "missing_skills": [
+        "api",
+        "apis",
+        "azure",
+        "database",
+        "databases",
+        "docker",
+        "gcp",
+        "git"
+      ]
+    },
+    {
+      "resume": "cloud-devops-engineer-resume-example.pdf",
+      "job": "cybersecurity",
+      "keyword_score": 0.476,
+      "technical_score": 0.28,
+      "job_skills_found": 3,
+      "job_too_short": true,
+      "matched_skills": [
+        "security"
+      ],
+      "missing_skills": [
+        "cybersecurity",
+        "networking"
+      ]
+    },
+    {
+      "resume": "cloud-devops-engineer-resume-example.pdf",
+      "job": "data_analyst",
+      "keyword_score": 0.28,
+      "technical_score": 0.0,
+      "job_skills_found": 10,
+      "job_too_short": false,
+      "matched_skills": [],
+      "missing_skills": [
+        "dashboards",
+        "data analysis",
+        "data visualization",
+        "excel",
+        "power bi",
+        "python",
+        "r",
+        "sql"
+      ]
+    },
+    {
+      "resume": "cloud-devops-engineer-resume-example.pdf",
+      "job": "data_scientist",
+      "keyword_score": 0.433,
+      "technical_score": 0.2186,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "azure"
+      ],
+      "missing_skills": [
+        "aws",
+        "dashboards",
+        "data visualization",
+        "deep learning",
+        "gcp",
+        "machine learning",
+        "nlp",
+        "python"
+      ]
+    },
+    {
+      "resume": "cloud-devops-engineer-resume-example.pdf",
+      "job": "devops_engineer",
+      "keyword_score": 0.569,
+      "technical_score": 0.4129,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "ansible",
+        "azure",
+        "kubernetes",
+        "monitoring",
+        "security"
+      ],
+      "missing_skills": [
+        "aws",
+        "bash",
+        "ci/cd",
+        "docker",
+        "gcp",
+        "grafana",
+        "prometheus",
+        "python"
+      ]
+    },
+    {
+      "resume": "cloud-devops-engineer-resume-example.pdf",
+      "job": "software_engineer",
+      "keyword_score": 0.4625,
+      "technical_score": 0.2607,
+      "job_skills_found": 15,
+      "job_too_short": false,
+      "matched_skills": [
+        "azure",
+        "kubernetes"
+      ],
+      "missing_skills": [
+        "api",
+        "apis",
+        "aws",
+        "ci/cd",
+        "database",
+        "databases",
+        "docker",
+        "gcp"
+      ]
+    },
+    {
+      "resume": "devops-engineer-resume-example.pdf",
+      "job": "cybersecurity",
+      "keyword_score": 0.364,
+      "technical_score": 0.12,
+      "job_skills_found": 3,
+      "job_too_short": true,
+      "matched_skills": [],
+      "missing_skills": [
+        "cybersecurity",
+        "networking",
+        "security"
+      ]
+    },
+    {
+      "resume": "devops-engineer-resume-example.pdf",
+      "job": "data_analyst",
+      "keyword_score": 0.4585,
+      "technical_score": 0.255,
+      "job_skills_found": 10,
+      "job_too_short": false,
+      "matched_skills": [
+        "python",
+        "r",
+        "sql"
+      ],
+      "missing_skills": [
+        "dashboards",
+        "data analysis",
+        "data visualization",
+        "excel",
+        "power bi",
+        "statistical analysis",
+        "tableau"
+      ]
+    },
+    {
+      "resume": "devops-engineer-resume-example.pdf",
+      "job": "data_scientist",
+      "keyword_score": 0.501,
+      "technical_score": 0.3157,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "aws",
+        "python",
+        "sql"
+      ],
+      "missing_skills": [
+        "azure",
+        "dashboards",
+        "data visualization",
+        "deep learning",
+        "gcp",
+        "machine learning",
+        "nlp",
+        "pytorch"
+      ]
+    },
+    {
+      "resume": "devops-engineer-resume-example.pdf",
+      "job": "devops_engineer",
+      "keyword_score": 0.569,
+      "technical_score": 0.4129,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "ansible",
+        "aws",
+        "docker",
+        "python",
+        "terraform"
+      ],
+      "missing_skills": [
+        "azure",
+        "bash",
+        "ci/cd",
+        "gcp",
+        "grafana",
+        "kubernetes",
+        "monitoring",
+        "prometheus"
+      ]
+    },
+    {
+      "resume": "devops-engineer-resume-example.pdf",
+      "job": "software_engineer",
+      "keyword_score": 0.5259,
+      "technical_score": 0.3513,
+      "job_skills_found": 15,
+      "job_too_short": false,
+      "matched_skills": [
+        "aws",
+        "docker",
+        "git",
+        "python"
+      ],
+      "missing_skills": [
+        "api",
+        "apis",
+        "azure",
+        "ci/cd",
+        "database",
+        "databases",
+        "gcp",
+        "java"
+      ]
+    },
+    {
+      "resume": "mark_haase_resume.pdf",
+      "job": "cybersecurity",
+      "keyword_score": 0.588,
+      "technical_score": 0.44,
+      "job_skills_found": 3,
+      "job_too_short": true,
+      "matched_skills": [
+        "cybersecurity",
+        "security"
+      ],
+      "missing_skills": [
+        "networking"
+      ]
+    },
+    {
+      "resume": "mark_haase_resume.pdf",
+      "job": "data_analyst",
+      "keyword_score": 0.4585,
+      "technical_score": 0.255,
+      "job_skills_found": 10,
+      "job_too_short": false,
+      "matched_skills": [
+        "python",
+        "r",
+        "sql"
+      ],
+      "missing_skills": [
+        "dashboards",
+        "data analysis",
+        "data visualization",
+        "excel",
+        "power bi",
+        "statistical analysis",
+        "tableau"
+      ]
+    },
+    {
+      "resume": "mark_haase_resume.pdf",
+      "job": "data_scientist",
+      "keyword_score": 0.637,
+      "technical_score": 0.51,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "aws",
+        "machine learning",
+        "nlp",
+        "python",
+        "sql",
+        "statistics",
+        "tensorflow"
+      ],
+      "missing_skills": [
+        "azure",
+        "dashboards",
+        "data visualization",
+        "deep learning",
+        "gcp",
+        "pytorch",
+        "scikit-learn"
+      ]
+    },
+    {
+      "resume": "mark_haase_resume.pdf",
+      "job": "devops_engineer",
+      "keyword_score": 0.535,
+      "technical_score": 0.3643,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "aws",
+        "monitoring",
+        "python",
+        "security"
+      ],
+      "missing_skills": [
+        "ansible",
+        "azure",
+        "bash",
+        "ci/cd",
+        "docker",
+        "gcp",
+        "grafana",
+        "kubernetes"
+      ]
+    },
+    {
+      "resume": "mark_haase_resume.pdf",
+      "job": "software_engineer",
+      "keyword_score": 0.5894,
+      "technical_score": 0.442,
+      "job_skills_found": 15,
+      "job_too_short": false,
+      "matched_skills": [
+        "api",
+        "apis",
+        "aws",
+        "database",
+        "databases",
+        "python"
+      ],
+      "missing_skills": [
+        "azure",
+        "ci/cd",
+        "docker",
+        "gcp",
+        "git",
+        "java",
+        "kubernetes",
+        "rest api"
+      ]
+    },
+    {
+      "resume": "resume (1).pdf",
+      "job": "cybersecurity",
+      "keyword_score": 0.364,
+      "technical_score": 0.12,
+      "job_skills_found": 3,
+      "job_too_short": true,
+      "matched_skills": [],
+      "missing_skills": [
+        "cybersecurity",
+        "networking",
+        "security"
+      ]
+    },
+    {
+      "resume": "resume (1).pdf",
+      "job": "data_analyst",
+      "keyword_score": 0.399,
+      "technical_score": 0.17,
+      "job_skills_found": 10,
+      "job_too_short": false,
+      "matched_skills": [
+        "dashboards",
+        "python"
+      ],
+      "missing_skills": [
+        "data analysis",
+        "data visualization",
+        "excel",
+        "power bi",
+        "r",
+        "sql",
+        "statistical analysis",
+        "tableau"
+      ]
+    },
+    {
+      "resume": "resume (1).pdf",
+      "job": "data_scientist",
+      "keyword_score": 0.535,
+      "technical_score": 0.3643,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "aws",
+        "dashboards",
+        "gcp",
+        "python"
+      ],
+      "missing_skills": [
+        "azure",
+        "data visualization",
+        "deep learning",
+        "machine learning",
+        "nlp",
+        "pytorch",
+        "scikit-learn",
+        "sql"
+      ]
+    },
+    {
+      "resume": "resume (1).pdf",
+      "job": "devops_engineer",
+      "keyword_score": 0.603,
+      "technical_score": 0.4614,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "aws",
+        "docker",
+        "gcp",
+        "kubernetes",
+        "python",
+        "terraform"
+      ],
+      "missing_skills": [
+        "ansible",
+        "azure",
+        "bash",
+        "ci/cd",
+        "grafana",
+        "monitoring",
+        "prometheus",
+        "security"
+      ]
+    },
+    {
+      "resume": "resume (1).pdf",
+      "job": "software_engineer",
+      "keyword_score": 0.6211,
+      "technical_score": 0.4873,
+      "job_skills_found": 15,
+      "job_too_short": false,
+      "matched_skills": [
+        "api",
+        "apis",
+        "aws",
+        "docker",
+        "gcp",
+        "kubernetes",
+        "python"
+      ],
+      "missing_skills": [
+        "azure",
+        "ci/cd",
+        "database",
+        "databases",
+        "git",
+        "java",
+        "rest api",
+        "version control"
+      ]
+    },
+    {
+      "resume": "resume (2).pdf",
+      "job": "cybersecurity",
+      "keyword_score": 0.364,
+      "technical_score": 0.12,
+      "job_skills_found": 3,
+      "job_too_short": true,
+      "matched_skills": [],
+      "missing_skills": [
+        "cybersecurity",
+        "networking",
+        "security"
+      ]
+    },
+    {
+      "resume": "resume (2).pdf",
+      "job": "data_analyst",
+      "keyword_score": 0.637,
+      "technical_score": 0.51,
+      "job_skills_found": 10,
+      "job_too_short": false,
+      "matched_skills": [
+        "dashboards",
+        "python",
+        "r",
+        "sql",
+        "statistical analysis",
+        "tableau"
+      ],
+      "missing_skills": [
+        "data analysis",
+        "data visualization",
+        "excel",
+        "power bi"
+      ]
+    },
+    {
+      "resume": "resume (2).pdf",
+      "job": "data_scientist",
+      "keyword_score": 0.569,
+      "technical_score": 0.4129,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "dashboards",
+        "gcp",
+        "machine learning",
+        "python",
+        "sql"
+      ],
+      "missing_skills": [
+        "aws",
+        "azure",
+        "data visualization",
+        "deep learning",
+        "nlp",
+        "pytorch",
+        "scikit-learn",
+        "statistics"
+      ]
+    },
+    {
+      "resume": "resume (2).pdf",
+      "job": "devops_engineer",
+      "keyword_score": 0.603,
+      "technical_score": 0.4614,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "bash",
+        "ci/cd",
+        "gcp",
+        "monitoring",
+        "python",
+        "terraform"
+      ],
+      "missing_skills": [
+        "ansible",
+        "aws",
+        "azure",
+        "docker",
+        "grafana",
+        "kubernetes",
+        "prometheus",
+        "security"
+      ]
+    },
+    {
+      "resume": "resume (2).pdf",
+      "job": "software_engineer",
+      "keyword_score": 0.6211,
+      "technical_score": 0.4873,
+      "job_skills_found": 15,
+      "job_too_short": false,
+      "matched_skills": [
+        "api",
+        "apis",
+        "ci/cd",
+        "database",
+        "databases",
+        "gcp",
+        "python"
+      ],
+      "missing_skills": [
+        "aws",
+        "azure",
+        "docker",
+        "git",
+        "java",
+        "kubernetes",
+        "rest api",
+        "version control"
+      ]
+    },
+    {
+      "resume": "resume.pdf",
+      "job": "cybersecurity",
+      "keyword_score": 0.476,
+      "technical_score": 0.28,
+      "job_skills_found": 3,
+      "job_too_short": true,
+      "matched_skills": [
+        "networking"
+      ],
+      "missing_skills": [
+        "cybersecurity",
+        "security"
+      ]
+    },
+    {
+      "resume": "resume.pdf",
+      "job": "data_analyst",
+      "keyword_score": 0.28,
+      "technical_score": 0.0,
+      "job_skills_found": 10,
+      "job_too_short": false,
+      "matched_skills": [],
+      "missing_skills": [
+        "dashboards",
+        "data analysis",
+        "data visualization",
+        "excel",
+        "power bi",
+        "python",
+        "r",
+        "sql"
+      ]
+    },
+    {
+      "resume": "resume.pdf",
+      "job": "data_scientist",
+      "keyword_score": 0.433,
+      "technical_score": 0.2186,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "aws"
+      ],
+      "missing_skills": [
+        "azure",
+        "dashboards",
+        "data visualization",
+        "deep learning",
+        "gcp",
+        "machine learning",
+        "nlp",
+        "python"
+      ]
+    },
+    {
+      "resume": "resume.pdf",
+      "job": "devops_engineer",
+      "keyword_score": 0.603,
+      "technical_score": 0.4614,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "ansible",
+        "aws",
+        "bash",
+        "ci/cd",
+        "docker",
+        "terraform"
+      ],
+      "missing_skills": [
+        "azure",
+        "gcp",
+        "grafana",
+        "kubernetes",
+        "monitoring",
+        "prometheus",
+        "python",
+        "security"
+      ]
+    },
+    {
+      "resume": "resume.pdf",
+      "job": "software_engineer",
+      "keyword_score": 0.6846,
+      "technical_score": 0.578,
+      "job_skills_found": 15,
+      "job_too_short": false,
+      "matched_skills": [
+        "api",
+        "apis",
+        "aws",
+        "ci/cd",
+        "database",
+        "databases",
+        "docker",
+        "java"
+      ],
+      "missing_skills": [
+        "azure",
+        "gcp",
+        "git",
+        "kubernetes",
+        "python",
+        "rest api"
+      ]
+    },
+    {
+      "resume": "resume_juanjosecarin.pdf",
+      "job": "cybersecurity",
+      "keyword_score": 0.364,
+      "technical_score": 0.12,
+      "job_skills_found": 3,
+      "job_too_short": true,
+      "matched_skills": [],
+      "missing_skills": [
+        "cybersecurity",
+        "networking",
+        "security"
+      ]
+    },
+    {
+      "resume": "resume_juanjosecarin.pdf",
+      "job": "data_analyst",
+      "keyword_score": 0.637,
+      "technical_score": 0.51,
+      "job_skills_found": 10,
+      "job_too_short": false,
+      "matched_skills": [
+        "data analysis",
+        "data visualization",
+        "python",
+        "r",
+        "sql",
+        "tableau"
+      ],
+      "missing_skills": [
+        "dashboards",
+        "excel",
+        "power bi",
+        "statistical analysis"
+      ]
+    },
+    {
+      "resume": "resume_juanjosecarin.pdf",
+      "job": "data_scientist",
+      "keyword_score": 0.671,
+      "technical_score": 0.5586,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "aws",
+        "data visualization",
+        "machine learning",
+        "python",
+        "scikit-learn",
+        "sql",
+        "statistics",
+        "tensorflow"
+      ],
+      "missing_skills": [
+        "azure",
+        "dashboards",
+        "deep learning",
+        "gcp",
+        "nlp",
+        "pytorch"
+      ]
+    },
+    {
+      "resume": "resume_juanjosecarin.pdf",
+      "job": "devops_engineer",
+      "keyword_score": 0.535,
+      "technical_score": 0.3643,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "aws",
+        "bash",
+        "monitoring",
+        "python"
+      ],
+      "missing_skills": [
+        "ansible",
+        "azure",
+        "ci/cd",
+        "docker",
+        "gcp",
+        "grafana",
+        "kubernetes",
+        "prometheus"
+      ]
+    },
+    {
+      "resume": "resume_juanjosecarin.pdf",
+      "job": "software_engineer",
+      "keyword_score": 0.5577,
+      "technical_score": 0.3967,
+      "job_skills_found": 15,
+      "job_too_short": false,
+      "matched_skills": [
+        "api",
+        "apis",
+        "aws",
+        "git",
+        "python"
+      ],
+      "missing_skills": [
+        "azure",
+        "ci/cd",
+        "database",
+        "databases",
+        "docker",
+        "gcp",
+        "java",
+        "kubernetes"
+      ]
+    },
+    {
+      "resume": "revised0Blue-Simple-Professional-CV-Resume.pdf",
+      "job": "cybersecurity",
+      "keyword_score": 0.7,
+      "technical_score": 0.6,
+      "job_skills_found": 3,
+      "job_too_short": true,
+      "matched_skills": [
+        "cybersecurity",
+        "networking",
+        "security"
+      ],
+      "missing_skills": []
+    },
+    {
+      "resume": "revised0Blue-Simple-Professional-CV-Resume.pdf",
+      "job": "data_analyst",
+      "keyword_score": 0.28,
+      "technical_score": 0.0,
+      "job_skills_found": 10,
+      "job_too_short": false,
+      "matched_skills": [],
+      "missing_skills": [
+        "dashboards",
+        "data analysis",
+        "data visualization",
+        "excel",
+        "power bi",
+        "python",
+        "r",
+        "sql"
+      ]
+    },
+    {
+      "resume": "revised0Blue-Simple-Professional-CV-Resume.pdf",
+      "job": "data_scientist",
+      "keyword_score": 0.433,
+      "technical_score": 0.2186,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "azure"
+      ],
+      "missing_skills": [
+        "aws",
+        "dashboards",
+        "data visualization",
+        "deep learning",
+        "gcp",
+        "machine learning",
+        "nlp",
+        "python"
+      ]
+    },
+    {
+      "resume": "revised0Blue-Simple-Professional-CV-Resume.pdf",
+      "job": "devops_engineer",
+      "keyword_score": 0.501,
+      "technical_score": 0.3157,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "azure",
+        "monitoring",
+        "security"
+      ],
+      "missing_skills": [
+        "ansible",
+        "aws",
+        "bash",
+        "ci/cd",
+        "docker",
+        "gcp",
+        "grafana",
+        "kubernetes"
+      ]
+    },
+    {
+      "resume": "revised0Blue-Simple-Professional-CV-Resume.pdf",
+      "job": "software_engineer",
+      "keyword_score": 0.4307,
+      "technical_score": 0.2153,
+      "job_skills_found": 15,
+      "job_too_short": false,
+      "matched_skills": [
+        "azure"
+      ],
+      "missing_skills": [
+        "api",
+        "apis",
+        "aws",
+        "ci/cd",
+        "database",
+        "databases",
+        "docker",
+        "gcp"
+      ]
+    },
+    {
+      "resume": "tyler_adams_devops_resume.pdf",
+      "job": "cybersecurity",
+      "keyword_score": 0.588,
+      "technical_score": 0.44,
+      "job_skills_found": 3,
+      "job_too_short": true,
+      "matched_skills": [
+        "networking",
+        "security"
+      ],
+      "missing_skills": [
+        "cybersecurity"
+      ]
+    },
+    {
+      "resume": "tyler_adams_devops_resume.pdf",
+      "job": "data_analyst",
+      "keyword_score": 0.399,
+      "technical_score": 0.17,
+      "job_skills_found": 10,
+      "job_too_short": false,
+      "matched_skills": [
+        "python",
+        "sql"
+      ],
+      "missing_skills": [
+        "dashboards",
+        "data analysis",
+        "data visualization",
+        "excel",
+        "power bi",
+        "r",
+        "statistical analysis",
+        "tableau"
+      ]
+    },
+    {
+      "resume": "tyler_adams_devops_resume.pdf",
+      "job": "data_scientist",
+      "keyword_score": 0.535,
+      "technical_score": 0.3643,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "aws",
+        "azure",
+        "python",
+        "sql"
+      ],
+      "missing_skills": [
+        "dashboards",
+        "data visualization",
+        "deep learning",
+        "gcp",
+        "machine learning",
+        "nlp",
+        "pytorch",
+        "scikit-learn"
+      ]
+    },
+    {
+      "resume": "tyler_adams_devops_resume.pdf",
+      "job": "devops_engineer",
+      "keyword_score": 0.739,
+      "technical_score": 0.6557,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "ansible",
+        "aws",
+        "azure",
+        "bash",
+        "ci/cd",
+        "docker",
+        "kubernetes",
+        "python"
+      ],
+      "missing_skills": [
+        "gcp",
+        "grafana",
+        "monitoring",
+        "prometheus"
+      ]
+    },
+    {
+      "resume": "tyler_adams_devops_resume.pdf",
+      "job": "software_engineer",
+      "keyword_score": 0.7481,
+      "technical_score": 0.6687,
+      "job_skills_found": 15,
+      "job_too_short": false,
+      "matched_skills": [
+        "api",
+        "apis",
+        "aws",
+        "azure",
+        "ci/cd",
+        "docker",
+        "git",
+        "java"
+      ],
+      "missing_skills": [
+        "database",
+        "databases",
+        "gcp",
+        "version control"
+      ]
+    },
+    {
+      "resume": "wnd2a5nvoik3n0usnwok.pdf",
+      "job": "cybersecurity",
+      "keyword_score": 0.476,
+      "technical_score": 0.28,
+      "job_skills_found": 3,
+      "job_too_short": true,
+      "matched_skills": [
+        "security"
+      ],
+      "missing_skills": [
+        "cybersecurity",
+        "networking"
+      ]
+    },
+    {
+      "resume": "wnd2a5nvoik3n0usnwok.pdf",
+      "job": "data_analyst",
+      "keyword_score": 0.28,
+      "technical_score": 0.0,
+      "job_skills_found": 10,
+      "job_too_short": false,
+      "matched_skills": [],
+      "missing_skills": [
+        "dashboards",
+        "data analysis",
+        "data visualization",
+        "excel",
+        "power bi",
+        "python",
+        "r",
+        "sql"
+      ]
+    },
+    {
+      "resume": "wnd2a5nvoik3n0usnwok.pdf",
+      "job": "data_scientist",
+      "keyword_score": 0.501,
+      "technical_score": 0.3157,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "aws",
+        "azure",
+        "gcp"
+      ],
+      "missing_skills": [
+        "dashboards",
+        "data visualization",
+        "deep learning",
+        "machine learning",
+        "nlp",
+        "python",
+        "pytorch",
+        "scikit-learn"
+      ]
+    },
+    {
+      "resume": "wnd2a5nvoik3n0usnwok.pdf",
+      "job": "devops_engineer",
+      "keyword_score": 0.739,
+      "technical_score": 0.6557,
+      "job_skills_found": 14,
+      "job_too_short": false,
+      "matched_skills": [
+        "ansible",
+        "aws",
+        "azure",
+        "ci/cd",
+        "docker",
+        "gcp",
+        "kubernetes",
+        "monitoring"
+      ],
+      "missing_skills": [
+        "bash",
+        "grafana",
+        "prometheus",
+        "python"
+      ]
+    },
+    {
+      "resume": "wnd2a5nvoik3n0usnwok.pdf",
+      "job": "software_engineer",
+      "keyword_score": 0.6846,
+      "technical_score": 0.578,
+      "job_skills_found": 15,
+      "job_too_short": false,
+      "matched_skills": [
+        "aws",
+        "azure",
+        "ci/cd",
+        "database",
+        "databases",
+        "docker",
+        "gcp",
+        "git"
+      ],
+      "missing_skills": [
+        "api",
+        "apis",
+        "java",
+        "python",
+        "rest api",
+        "version control"
+      ]
+    }
+  ]
+}
