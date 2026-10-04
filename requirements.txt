@@ -7,7 +7,7 @@ scikit-learn==1.8.0
 # Data Processing
 pandas==2.3.3
 numpy==2.4.1
-pypdf==6.6.0
+pypdf==6.19.0
 
 # Web Framework
 streamlit==1.53.0
