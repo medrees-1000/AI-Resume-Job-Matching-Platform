@@ -65,3 +65,43 @@ def test_normal_text_passes_through(monkeypatch):
 def test_too_little_text_returns_none(monkeypatch):
     patch_reader(monkeypatch, "hello")
     assert extract_text_from_pdf("x.pdf") is None
+
+
+# --- regression: real raw extraction (pypdf 6.14) of a letter-spaced resume ---
+# tests/fixtures/abir_resume_letter_spaced_raw.txt is the unmodified output of
+# PdfReader.extract_text() on data/sample_resumes/"Abir Resume Data Analyst.pdf"
+# (94% single-letter tokens). The old repair only handled uniformly spaced
+# segments of 3+ characters and left this at 64%.
+
+from pathlib import Path
+
+FIXTURE = Path(__file__).parent / "fixtures" / "abir_resume_letter_spaced_raw.txt"
+
+
+def test_real_world_fixture_is_detected_then_repaired():
+    raw = FIXTURE.read_text(encoding="utf-8")
+    assert looks_letter_spaced(raw)  # fixture really is broken
+
+    fixed = rejoin_spaced_letters(raw)
+    assert single_letter_ratio(fixed) < 0.1
+    assert not looks_letter_spaced(fixed)
+    for phrase in ("Data Analyst", "transforming complex datasets", "clear, actionable insights", "data-driven"):
+        assert phrase in fixed
+
+
+def test_real_world_fixture_goes_through_extract_text_from_pdf(monkeypatch):
+    raw = FIXTURE.read_text(encoding="utf-8")
+    patch_reader(monkeypatch, raw, layout=" ")  # layout mode yields ~nothing, as for the real file
+    text = extract_text_from_pdf("x.pdf")
+    assert text.startswith("Data Analyst") and not looks_letter_spaced(text)
+
+
+def test_partial_runs_and_punctuation():
+    assert rejoin_spaced_letters("i n transforming  c l e a r ,  d a t a - d r i v e n .") == "in transforming clear, data-driven."
+
+
+def test_unrepairable_with_empty_layout_raises_not_none(monkeypatch):
+    # The original bug: broken plain text + near-empty layout text silently returned None.
+    patch_reader(monkeypatch, "a b " * 40, layout=" ")
+    with pytest.raises(UnreliableExtractionError):
+        extract_text_from_pdf("x.pdf")
