@@ -92,7 +92,8 @@ def calculate_hybrid_score(
         "matched_skills": keyword_match_results.get("matched_skills", []),
         "missing_skills": keyword_match_results.get("missing_skills", []),
         "missing_required": keyword_match_results.get("missing_required", []),
-        "missing_preferred": keyword_match_results.get("missing_preferred", [])
+        "missing_preferred": keyword_match_results.get("missing_preferred", []),
+        "job_description_too_short": keyword_match_results.get("job_description_too_short", False)
     }
 
 

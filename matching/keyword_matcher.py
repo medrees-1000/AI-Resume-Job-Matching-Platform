@@ -6,6 +6,10 @@ Extracts technical skills, tools, and requirements with better coverage.
 import re
 from typing import Dict, List, Set
 
+# Minimum number of recognized job skills before the skill-match ratio is
+# trusted at full weight (see calculate_keyword_match).
+MIN_RELIABLE_JOB_SKILLS = 5
+
 # COMPREHENSIVE Technical Skills Database
 TECH_SKILLS = {
     # Programming Languages
@@ -211,13 +215,13 @@ def calculate_keyword_match(resume_keywords: Dict, job_keywords: Dict, job_secti
         # If both are empty, fall back to heuristic
         if not required_skills and not preferred_skills:
             # Use heuristic split
-            all_job_skills = list(job_skills)
+            all_job_skills = sorted(job_skills)  # sorted: set order varies between runs
             split_point = int(len(all_job_skills) * 0.7)
             required_skills = set(all_job_skills[:split_point]) if split_point > 0 else job_skills
             preferred_skills = set(all_job_skills[split_point:]) if split_point > 0 else set()
     else:
         # Fallback: Assume 70% required, 30% preferred
-        all_job_skills = list(job_skills)
+        all_job_skills = sorted(job_skills)  # sorted: set order varies between runs
         split_point = int(len(all_job_skills) * 0.7)
         required_skills = set(all_job_skills[:split_point]) if split_point > 0 else job_skills
         preferred_skills = set(all_job_skills[split_point:]) if split_point > 0 else set()
@@ -242,6 +246,23 @@ def calculate_keyword_match(resume_keywords: Dict, job_keywords: Dict, job_secti
     
     # Technical score: 80% required, 20% preferred
     technical_score = (0.80 * required_score) + (0.20 * preferred_score)
+
+    # Short-job-description correction.
+    # A ratio like matched/total is only meaningful when "total" is big enough:
+    # a posting with 3 recognized skills ("security", "networking", ...) gives
+    # nearly any resume a 100% match, while a 15-skill posting is much harder
+    # to ace, so raw scores aren't comparable across postings. We scale the
+    # score by confidence = min(1, job_skills / MIN_RELIABLE_JOB_SKILLS),
+    # which is the same as dividing by max(total, MIN_RELIABLE_JOB_SKILLS):
+    # a perfect match on a 3-skill posting caps at 3/5 = 60%.
+    # Tradeoff: a genuinely perfect candidate for a short posting is
+    # under-scored, but that's the safer failure (the UI flags the posting as
+    # too short) compared with ranking unrelated resumes first. Rescaling like
+    # this was chosen over blending toward the semantic score because the
+    # keyword matcher stays self-contained and deterministic (no embeddings
+    # needed), and it can be evaluated offline with tests/evaluate_matching.py.
+    keyword_confidence = min(1.0, len(job_skills) / MIN_RELIABLE_JOB_SKILLS)
+    technical_score *= keyword_confidence
     
     # Combine all matched skills
     all_matched = list(matched_required.union(matched_preferred))
@@ -296,7 +317,10 @@ def calculate_keyword_match(resume_keywords: Dict, job_keywords: Dict, job_secti
         "total_resume_skills": len(resume_skills),
         "total_job_skills": len(job_skills),
         "total_required_skills": len(required_skills),
-        "total_preferred_skills": len(preferred_skills)
+        "total_preferred_skills": len(preferred_skills),
+        # Short-posting handling
+        "keyword_confidence": keyword_confidence,
+        "job_description_too_short": len(job_skills) < MIN_RELIABLE_JOB_SKILLS
     }
 
 

@@ -330,6 +330,12 @@ if st.button("🚀 Run Match Analysis", use_container_width=True, type="primary"
     st.markdown("---")
     
     hybrid_score = score_breakdown["hybrid_score"]
+
+    if score_breakdown.get("job_description_too_short"):
+        st.warning(
+            "⚠️ This job description mentions very few recognized skills, so the skill-match "
+            "score is capped and less reliable. Paste the full posting for a better result."
+        )
     
     # Determine match category based on NEW thresholds
     if hybrid_score >= 0.85:
