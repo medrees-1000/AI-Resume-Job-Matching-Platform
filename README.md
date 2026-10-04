@@ -2,26 +2,15 @@
 
 ## Project Overview
 
-This project delivers an intelligent resume-job matching system using **Python**, **Transformer Embeddings**, and **AI-powered explanations**.  
-The goal was to move beyond keyword-based ATS systems and build a production-quality semantic matching pipeline that provides explainable, accurate candidate assessments **validated against commercial platforms**.
+A Streamlit app that scores how well a resume PDF matches a job description, using **Python**, **sentence-transformer embeddings** and **LLM-generated explanations**.
 
-A hybrid scoring algorithm combines semantic similarity (all-mpnet-base-v2 embeddings) with weighted keyword analysis, while a RAG layer powered by Groq Llama 3.3 generates human-readable match explanations. The system achieves **94% accuracy alignment** with JobRight.ai commercial ATS—matching or exceeding commercial performance across multiple validation tests.
+A hybrid score combines semantic similarity (all-mpnet-base-v2 embeddings) with weighted keyword analysis (required vs. preferred skills), and an optional Groq (Llama 3.3) call writes a short human-readable explanation of the result.
 
----
+### What is and isn't validated
 
-## Validation Against Industry Standard
-
-**Tested against JobRight.ai commercial ATS platform:**
-
-| Test Case | Our System | JobRight.ai | Score Difference |
-|-----------|-----------|-------------|------------------|
-| Data Science Intern | **89%** | **89%** | **0%**  |
-| ML Engineer Role | **83%** | **89%** | **-6%**  |
-| Data Analyst Position | **70%** | **80%** | **-10%**  |
-
-**Average alignment: 94%** (measured as absolute score difference ≤10% on identical resume-job inputs across controlled test cases).
-
-> *Score differences of 6-10% reflect independent semantic understanding rather than simple keyword copying, which is ideal for cross-domain matching and career transitions.*
+- **Tested:** unit tests cover the keyword matcher, the hybrid scorer and the PDF text extraction (`pytest`). See [Testing and evaluation](#testing-and-evaluation).
+- **Reproducible evaluation:** `tests/evaluate_matching.py` runs the keyword matcher over every sample resume × job description and writes the scores to `tests/results/`.
+- **Not validated:** there is no labelled dataset in this repo, so no accuracy figure is claimed. The semantic-boost factor (1.8×) and the score weights are hand-tuned heuristics, not fitted values. Earlier versions of this README cited a comparison against a commercial ATS; that comparison cannot be reproduced from this repo and has been removed.
 
 ---
 
@@ -35,70 +24,56 @@ Recruiters and hiring teams struggle with:
 - **Slow processing** taking minutes per resume in traditional systems
 - **Poor handling** of career transitions (e.g., Software Engineer → Data Scientist)
 
-This system solves all five problems with semantic AI, explainable scoring, and sub-2-second processing.
+This project is an attempt at those problems: semantic matching, required/preferred weighting, and explanations of why a score came out as it did.
 
 ---
 
 ## Tech Stack
 
-### Core Technologies
-* **Python 3.10+** – Primary programming language
-* **Sentence-BERT (all-mpnet-base-v2)** – 768-dimensional semantic embeddings (upgraded from all-MiniLM-L6-v2 after 12% accuracy improvement)
-* **PyTorch 2.1.0** – Deep learning framework
-* **Transformers 4.35.2** – Hugging Face transformer models
-* **scikit-learn 1.3.2** – Cosine similarity and ML utilities
+Exact versions are pinned in [requirements.txt](requirements.txt).
 
-### NLP & AI
-* **sentence-transformers 2.2.2** – Embedding generation
-* **Groq API (Llama 3.3 70B)** – RAG-based explanations
-* **groq 0.9.0** – Groq client library
-
-### Web & Visualization
-* **Streamlit 1.28.1** – Interactive web interface
-* **Plotly 5.18.0** – Speedometer gauge visualizations
-
-### Data Processing
-* **pandas 2.1.3** – Data manipulation
-* **NumPy 1.24.3** – Numerical operations
-* **pypdf 3.17.1** – PDF text extraction
-* **python-dotenv 1.0.0** – Environment configuration
-
-### Database
-* **SQLite** – Resume storage and retrieval
+* **Python 3.10+**
+* **sentence-transformers** (all-mpnet-base-v2, 768-dim embeddings), **PyTorch**, **transformers**, **scikit-learn** (cosine similarity)
+* **pypdf** – PDF text extraction
+* **Groq API (Llama 3.3 70B)** – optional match explanations
+* **Streamlit** + **Plotly** – web UI and gauge charts
+* **pytest** – tests (see below)
 
 ---
 
 ## Project Architecture
 ```
-AI-resume-job-matcher/
-│
-├── data/
-│   ├── jobs/                     # 5 sample job descriptions (tech roles)
-│   └── resumes/                  # Resume upload directory
+AI-Resume-Job-Matching-Platform/
 │
 ├── app/
-│   └── streamlit_app.py          # Main web application (400+ lines)
-│
-├── database/
-│   └── db_utils.py               # SQLite CRUD operations
+│   └── streamlit_app.py          # Streamlit web application
 │
 ├── ingestion/
-│   ├── pdf_parser.py             # PDF → text extraction (pypdf)
-│   ├── chunking.py               # Smart chunking (200 words, 75 overlap)
-│   ├── job_cleaner.py            # Auto-removes company fluff from job posts
-│   └── process_resume.py         # End-to-end resume processing pipeline
+│   ├── pdf_parser.py             # PDF → text (detects/repairs letter-spaced extraction)
+│   ├── chunking.py               # Word-based chunking (200 words, 75 overlap)
+│   ├── job_cleaner.py            # Strips company fluff, splits required/preferred
+│   └── process_resume.py         # Resume/job → text, chunks, embeddings
 │
 ├── matching/
-│   ├── similarity.py             # Cosine similarity computation
-│   ├── keyword_matcher.py        # Skill extraction + Required/Preferred weighting
-│   └── hybrid_scorer.py          # 4-component weighted scoring algorithm
+│   ├── similarity.py             # Cosine similarity, top matching chunks
+│   ├── keyword_matcher.py        # Skill extraction + required/preferred scoring
+│   └── hybrid_scorer.py          # Weighted combination into the final score
 │
-├── rag/
-│   └── groq_explainer.py         # AI-powered match explanations (Llama 3.3)
+├── explanation/
+│   └── groq_explainer.py         # LLM explanation (Groq) + offline fallback
 │
-├── archive/
-│   └── test_resumes/             # 25 test resumes for validation
+├── data/
+│   ├── jobs/                     # 5 sample job descriptions
+│   └── sample_resumes/           # 25 sample resume PDFs used for evaluation
 │
+├── tests/
+│   ├── test_keyword_matcher.py   # pytest unit tests
+│   ├── test_hybrid_scorer.py     # pytest unit tests
+│   ├── test_pdf_parser.py        # pytest unit tests
+│   ├── evaluate_matching.py      # standalone evaluation script (not a pytest test)
+│   └── results/                  # evaluation output (CSV + JSON)
+│
+├── pytest.ini
 ├── .env.example                  # Environment template
 ├── requirements.txt              # Python dependencies
 └── README.md
@@ -122,30 +97,30 @@ Resume PDF → Text Extraction → Chunking → Embeddings → Similarity Matchi
 ```python
 hybrid_score = (
     0.40 × technical_skill_score +    # Keyword matching (Required 80%, Preferred 20%)
-    0.30 × boosted_semantic_score +   # Semantic similarity × 1.8 boost
+    0.30 × boosted_semantic_score +   # Semantic similarity × 1.8 boost (capped at 1)
     0.20 × experience_match_score +   # Experience level alignment
     0.10 × education_match_score      # Education requirements
 )
 
 # Cross-domain boost for career transitions
-if semantic_score > 0.4 and keyword_score < 0.5:
+if boosted_semantic_score > 0.4 and technical_score < 0.5:
     hybrid_score += 0.05  # +5% for transitioning roles (e.g., SWE → DS)
 ```
 
 **Key Innovations:**
-- **Semantic boost (1.8×)**: Raw cosine similarity underestimates matches by ~45%. Boost aligns with human judgment.
+- **Semantic boost (1.8×)**: Raw cosine similarity for chunk-vs-job comparisons tends to be low, so it is scaled up and capped at 1.0. This factor is a hand-picked heuristic.
 - **Required vs. Preferred weighting**: Required skills weighted 4× more than preferred (80/20 split).
-- **Penalty system**: -15% penalty when missing 3+ critical required skills.
+- **Penalty system**: 15% reduction of the technical score when more than 3 required skills are missing.
+- **Short-posting correction**: a job description with fewer than 5 recognized skills would let almost any resume match 100% of them, so the technical score is scaled by `skills_found / 5` and the UI warns that the posting is too short to score reliably.
 - **Cross-domain intelligence**: +5% boost when semantic fit is strong but keyword overlap is low.
 
 ---
 
-## Key Analytical Insights
+## Notes on Design Choices
 
-- **94% score alignment** with JobRight.ai commercial ATS across 3 independent validation tests (89% exact match, 83% and 70% within ±10%).
-- **Sub-2-second processing**: Average resume analysis completes in 1.8 seconds.
-- **Embedding model evolution**: Upgraded from all-MiniLM-L6-v2 (384-dim) to all-mpnet-base-v2 (768-dim) after observing 12% accuracy improvement in validation tests.
-- **Semantic boost discovery**: Raw cosine similarity consistently scores 40-60% lower than human judgment—empirically determined 1.8× multiplier aligns system output with recruiter assessments.
+- **Semantic boost:** the 1.8× multiplier and the score thresholds were tuned by hand on a few examples. They are not derived from labelled data.
+- **Embedding model:** all-mpnet-base-v2 (768-dim) is used instead of all-MiniLM-L6-v2 (384-dim) for higher general-purpose embedding quality; no benchmark of the two on this task is included in the repo.
+- **PDF robustness:** some PDFs make pypdf emit letter-spaced text ("D a t a  A n a l y s t"), which silently zeroes keyword matching. `ingestion/pdf_parser.py` detects this, tries to re-join the letters, and otherwise raises `UnreliableExtractionError` so the UI can tell the user instead of showing a misleadingly low score.
 
 ---
 
@@ -163,7 +138,6 @@ if semantic_score > 0.4 and keyword_score < 0.5:
 - Preferred qualifications and nice-to-have skills
 - Technical requirements and tools
 
-**Result:** 30-40% reduction in text length, focusing analysis on what matters.
 
 ---
 
@@ -180,7 +154,7 @@ if semantic_score > 0.4 and keyword_score < 0.5:
 
 ### 3. Keyword Matching
 **Structured skill extraction:**
-- **Skill database:** 60+ technical skills, tools, and frameworks (Python, SQL, AWS, Docker, etc.)
+- **Skill database:** ~290 technical skills, tools, and frameworks (Python, SQL, AWS, Docker, etc.)
 - **Separation logic:** Automatically distinguishes required vs. preferred qualifications
 - **Weighted scoring:** 80% weight on required skills, 20% on preferred
 - **Gap analysis:** Identifies exact missing skills for candidate feedback
@@ -194,17 +168,16 @@ Missing Preferred: aws, kubernetes
 
 ---
 
-### 4. AI Explanation (RAG)
+### 4. AI Explanation (optional)
 **Natural language insights:**
 - **Model:** Groq Llama 3.3 70B (fast, free inference)
-- **Processing time:** ~500ms per explanation
 - **Generates:**
   - Match reasoning (2-3 sentences)
   - Top 3 key strengths
   - Top 2 skill gaps
   - 2-3 actionable improvement suggestions
 
-**Free tier:** 14,400 requests/day (sufficient for 500+ daily resume analyses)
+Requires a Groq API key; without one the app uses a simple rule-based fallback explanation.
 
 ---
 
@@ -219,8 +192,8 @@ Missing Preferred: aws, kubernetes
 
 **1. Clone the repository**
 ```bash
-git clone https://github.com/yourusername/AI-resume-job-matcher.git
-cd AI-resume-job-matcher
+git clone https://github.com/medrees-1000/AI-Resume-Job-Matching-Platform.git
+cd AI-Resume-Job-Matching-Platform
 ```
 
 **2. Create virtual environment**
@@ -266,6 +239,24 @@ Application will open at **http://localhost:8501**
 
 ---
 
+## Testing and Evaluation
+
+Install dependencies first (`pip install -r requirements.txt`, plus `pip install pytest`), then run from the repo root.
+
+**Unit tests**
+```bash
+pytest
+```
+Covers `extract_keywords` / `calculate_keyword_match` (including the short-job-description cap and the missing-required-skills penalty), `calculate_hybrid_score` (weighting, category thresholds, cross-domain boost) and the PDF letter-spacing detection/repair. They use small hand-written strings, not the sample resumes, and don't need the embedding model.
+
+**Evaluation script**
+```bash
+python tests/evaluate_matching.py
+```
+Runs the keyword matcher on every PDF in `data/sample_resumes/` against every job in `data/jobs/` and writes `tests/results/keyword_matching_results.csv` and `.json` (resume, job, score, matched/missing skills). It prints the top 5 resumes per job. It evaluates keyword matching only (deterministic, no model download), so scores are not the full hybrid scores shown in the app. There are no ground-truth labels, so it reports scores and rankings rather than an accuracy percentage.
+
+---
+
 ### Troubleshooting
 
 **"ModuleNotFoundError: No module named 'groq'"**
@@ -281,25 +272,19 @@ pip install groq
 
 **"API key not set" warning**
 ```bash
-# System works without API key
-# Only AI explanations require the key
-# Basic matching still functions perfectly
+# The app works without an API key; only the AI explanation requires it
 ```
+
+**"This PDF's text could not be read reliably"**
+Re-export the resume from the original document (e.g. "Save as PDF") and upload it again.
 
 ---
 
-## Why This Project Matters
+## Limitations
 
-This project demonstrates production ML engineering skills:
-
-**Validated against commercial baseline** – 94% score alignment with JobRight.ai on identical inputs  
-**Modern NLP architecture** – Transformer embeddings, semantic similarity, RAG explanations  
-**Explainable AI system** – Transparent scoring with human-readable reasoning  
-**Production performance** – Sub-2-second processing with recruiter-decision quality  
-**End-to-end implementation** – PDF ingestion → embeddings → scoring → web deployment  
-**Engineering rigor** – Modular design, error handling, validation testing  
-
-**Key differentiator:** Unlike keyword matchers or academic classifiers, this system solves real hiring problems (semantic understanding, explainability, fairness) while maintaining commercial-grade accuracy. The hybrid scoring algorithm and validation methodology demonstrate ability to build ML systems that compete with established products.
+- Skill matching is a fixed vocabulary lookup (`TECH_SKILLS`), so skills outside that list are invisible to the keyword score.
+- Scanned/image-only PDFs have no extractable text and can't be processed (no OCR).
+- Scores are heuristic; treat them as a screening aid, not a hiring decision.
 
 ---
 

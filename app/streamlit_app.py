@@ -26,7 +26,7 @@ from matching.keyword_matcher import extract_keywords, calculate_keyword_match, 
 
 from matching.similarity import calculate_match_score, get_top_matching_chunks
 from matching.hybrid_scorer import calculate_hybrid_score, generate_score_explanation
-from rag.groq_explainer import generate_match_explanation_groq, generate_simple_explanation_fallback
+from explanation.groq_explainer import generate_match_explanation_groq, generate_simple_explanation_fallback
 
 # --- CUSTOM SMOOTH CIRCLE COMPONENT ---
 def render_full_circle_gauge(percent, label, size=150, color="#6366f1", font_size="22px"):
@@ -256,6 +256,10 @@ if st.button("🚀 Run Match Analysis", use_container_width=True, type="primary"
         
         resume_result = process_uploaded_resume(uploaded_file)
         
+        if resume_result.get("extraction_warning"):
+            st.warning(f"⚠️ {resume_result['error']} Scoring was skipped so you don't get a misleadingly low result.")
+            st.stop()
+
         if not resume_result["success"]:
             st.error(f"❌ Resume processing failed: {resume_result['error']}")
             st.stop()
@@ -326,6 +330,12 @@ if st.button("🚀 Run Match Analysis", use_container_width=True, type="primary"
     st.markdown("---")
     
     hybrid_score = score_breakdown["hybrid_score"]
+
+    if score_breakdown.get("job_description_too_short"):
+        st.warning(
+            "⚠️ This job description mentions very few recognized skills, so the skill-match "
+            "score is capped and less reliable. Paste the full posting for a better result."
+        )
     
     # Determine match category based on NEW thresholds
     if hybrid_score >= 0.85:

@@ -1,0 +1,126 @@
+resume,job,keyword_score,technical_score,job_skills_found,job_too_short,matched_skills,missing_skills
+2024_10_19_CloudResumeAWS.pdf,cybersecurity,0.588,0.44,3,True,cybersecurity; security,networking
+2024_10_19_CloudResumeAWS.pdf,data_analyst,0.399,0.17,10,False,python; r,dashboards; data analysis; data visualization; excel; power bi; sql; statistical analysis; tableau
+2024_10_19_CloudResumeAWS.pdf,data_scientist,0.467,0.2671,14,False,aws; python,azure; dashboards; data visualization; deep learning; gcp; machine learning; nlp; pytorch
+2024_10_19_CloudResumeAWS.pdf,devops_engineer,0.637,0.51,14,False,aws; ci/cd; docker; monitoring; python; security; terraform,ansible; azure; bash; gcp; grafana; kubernetes; prometheus
+2024_10_19_CloudResumeAWS.pdf,software_engineer,0.7163,0.6233,15,False,api; apis; aws; ci/cd; database; databases; docker; git,azure; gcp; java; kubernetes; rest api
+Abir Resume Data Analyst.pdf,cybersecurity,0.476,0.28,3,True,security,cybersecurity; networking
+Abir Resume Data Analyst.pdf,data_analyst,0.77,0.7,10,False,dashboards; data analysis; excel; power bi; python; sql; statistical analysis,data visualization; r; tableau
+Abir Resume Data Analyst.pdf,data_scientist,0.535,0.3643,14,False,dashboards; machine learning; python; sql,aws; azure; data visualization; deep learning; gcp; nlp; pytorch; scikit-learn
+Abir Resume Data Analyst.pdf,devops_engineer,0.501,0.3157,14,False,monitoring; python; security,ansible; aws; azure; bash; ci/cd; docker; gcp; grafana
+Abir Resume Data Analyst.pdf,software_engineer,0.4942,0.306,15,False,database; databases; python,api; apis; aws; azure; ci/cd; docker; gcp; git
+AshwinGopalsamy_Resume.pdf,cybersecurity,0.364,0.12,3,True,,cybersecurity; networking; security
+AshwinGopalsamy_Resume.pdf,data_analyst,0.3395,0.085,10,False,python,dashboards; data analysis; data visualization; excel; power bi; r; sql; statistical analysis
+AshwinGopalsamy_Resume.pdf,data_scientist,0.535,0.3643,14,False,aws; azure; machine learning; python,dashboards; data visualization; deep learning; gcp; nlp; pytorch; scikit-learn; sql
+AshwinGopalsamy_Resume.pdf,devops_engineer,0.705,0.6071,14,False,aws; azure; ci/cd; docker; grafana; kubernetes; prometheus; python,ansible; bash; gcp; monitoring; security
+AshwinGopalsamy_Resume.pdf,software_engineer,0.6846,0.578,15,False,aws; azure; ci/cd; database; databases; docker; java; kubernetes,api; apis; gcp; git; rest api; version control
+CV.pdf,cybersecurity,0.364,0.12,3,True,,cybersecurity; networking; security
+CV.pdf,data_analyst,0.399,0.17,10,False,python; r,dashboards; data analysis; data visualization; excel; power bi; sql; statistical analysis; tableau
+CV.pdf,data_scientist,0.467,0.2671,14,False,aws; python,azure; dashboards; data visualization; deep learning; gcp; machine learning; nlp; pytorch
+CV.pdf,devops_engineer,0.603,0.4614,14,False,aws; ci/cd; docker; kubernetes; python; terraform,ansible; azure; bash; gcp; grafana; monitoring; prometheus; security
+CV.pdf,software_engineer,0.6846,0.578,15,False,api; apis; aws; ci/cd; database; databases; docker; kubernetes,azure; gcp; git; java; rest api; version control
+DiwasPuri_Resume.pdf,cybersecurity,0.364,0.12,3,True,,cybersecurity; networking; security
+DiwasPuri_Resume.pdf,data_analyst,0.84,0.8,10,False,dashboards; excel; power bi; python; r; sql; statistical analysis; tableau,data analysis; data visualization
+DiwasPuri_Resume.pdf,data_scientist,0.705,0.6071,14,False,aws; dashboards; machine learning; nlp; python; pytorch; scikit-learn; sql,azure; data visualization; deep learning; gcp; tensorflow
+DiwasPuri_Resume.pdf,devops_engineer,0.535,0.3643,14,False,aws; bash; ci/cd; python,ansible; azure; docker; gcp; grafana; kubernetes; monitoring; prometheus
+DiwasPuri_Resume.pdf,software_engineer,0.6846,0.578,15,False,api; apis; aws; ci/cd; database; databases; git; python,azure; docker; gcp; java; kubernetes; version control
+Fateme-Jadidi-CVFeb2025.pdf,cybersecurity,0.364,0.12,3,True,,cybersecurity; networking; security
+Fateme-Jadidi-CVFeb2025.pdf,data_analyst,0.77,0.7,10,False,dashboards; data analysis; data visualization; power bi; python; sql; statistical analysis,excel; r; tableau
+Fateme-Jadidi-CVFeb2025.pdf,data_scientist,0.739,0.6557,14,False,aws; dashboards; data visualization; deep learning; machine learning; python; pytorch; scikit-learn,azure; gcp; nlp; statistics
+Fateme-Jadidi-CVFeb2025.pdf,devops_engineer,0.501,0.3157,14,False,aws; docker; python,ansible; azure; bash; ci/cd; gcp; grafana; kubernetes; monitoring
+Fateme-Jadidi-CVFeb2025.pdf,software_engineer,0.5894,0.442,15,False,api; apis; aws; docker; git; python,azure; ci/cd; database; databases; gcp; java; kubernetes; rest api
+Krishna's-Resume.pdf,cybersecurity,0.476,0.28,3,True,security,cybersecurity; networking
+Krishna's-Resume.pdf,data_analyst,0.3395,0.085,10,False,python,dashboards; data analysis; data visualization; excel; power bi; r; sql; statistical analysis
+Krishna's-Resume.pdf,data_scientist,0.535,0.3643,14,False,aws; azure; gcp; python,dashboards; data visualization; deep learning; machine learning; nlp; pytorch; scikit-learn; sql
+Krishna's-Resume.pdf,devops_engineer,0.739,0.6557,14,False,ansible; aws; azure; docker; gcp; kubernetes; prometheus; python,bash; ci/cd; grafana; monitoring
+Krishna's-Resume.pdf,software_engineer,0.6211,0.4873,15,False,aws; azure; docker; gcp; git; kubernetes; python,api; apis; ci/cd; database; databases; java; rest api; version control
+Nadeem_Abdul_Resume.pdf,cybersecurity,0.364,0.12,3,True,,cybersecurity; networking; security
+Nadeem_Abdul_Resume.pdf,data_analyst,0.91,0.9,10,False,dashboards; data analysis; data visualization; excel; power bi; python; r; sql,statistical analysis
+Nadeem_Abdul_Resume.pdf,data_scientist,0.637,0.51,14,False,azure; dashboards; data visualization; machine learning; nlp; python; sql,aws; deep learning; gcp; pytorch; scikit-learn; statistics; tensorflow
+Nadeem_Abdul_Resume.pdf,devops_engineer,0.501,0.3157,14,False,azure; monitoring; python,ansible; aws; bash; ci/cd; docker; gcp; grafana; kubernetes
+Nadeem_Abdul_Resume.pdf,software_engineer,0.6529,0.5327,15,False,api; apis; azure; database; databases; git; python; version control,aws; ci/cd; docker; gcp; java; kubernetes; rest api
+Olena_Avramenko_CV_EN.pdf,cybersecurity,0.364,0.12,3,True,,cybersecurity; networking; security
+Olena_Avramenko_CV_EN.pdf,data_analyst,0.77,0.7,10,False,dashboards; data visualization; excel; power bi; python; sql; tableau,data analysis; r; statistical analysis
+Olena_Avramenko_CV_EN.pdf,data_scientist,0.535,0.3643,14,False,dashboards; data visualization; python; sql,aws; azure; deep learning; gcp; machine learning; nlp; pytorch; scikit-learn
+Olena_Avramenko_CV_EN.pdf,devops_engineer,0.433,0.2186,14,False,python,ansible; aws; azure; bash; ci/cd; docker; gcp; grafana
+Olena_Avramenko_CV_EN.pdf,software_engineer,0.4307,0.2153,15,False,python,api; apis; aws; azure; ci/cd; database; databases; docker
+Rakesh_ML_Resume.pdf,cybersecurity,0.476,0.28,3,True,security,cybersecurity; networking
+Rakesh_ML_Resume.pdf,data_analyst,0.518,0.34,10,False,data analysis; data visualization; python; sql,dashboards; excel; power bi; r; statistical analysis; tableau
+Rakesh_ML_Resume.pdf,data_scientist,0.705,0.6071,14,False,azure; data visualization; deep learning; machine learning; nlp; python; sql; statistics,aws; dashboards; gcp; pytorch; scikit-learn
+Rakesh_ML_Resume.pdf,devops_engineer,0.569,0.4129,14,False,azure; docker; kubernetes; python; security,ansible; aws; bash; ci/cd; gcp; grafana; monitoring; prometheus
+Rakesh_ML_Resume.pdf,software_engineer,0.6846,0.578,15,False,api; apis; azure; docker; git; java; kubernetes; python,aws; ci/cd; database; databases; gcp; version control
+Sajid_Rehman_Resume1.pdf,cybersecurity,0.364,0.12,3,True,,cybersecurity; networking; security
+Sajid_Rehman_Resume1.pdf,data_analyst,0.399,0.17,10,False,python; sql,dashboards; data analysis; data visualization; excel; power bi; r; statistical analysis; tableau
+Sajid_Rehman_Resume1.pdf,data_scientist,0.671,0.5586,14,False,deep learning; machine learning; nlp; python; pytorch; scikit-learn; sql; tensorflow,aws; azure; dashboards; data visualization; gcp; statistics
+Sajid_Rehman_Resume1.pdf,devops_engineer,0.467,0.2671,14,False,docker; python,ansible; aws; azure; bash; ci/cd; gcp; grafana; kubernetes
+Sajid_Rehman_Resume1.pdf,software_engineer,0.4942,0.306,15,False,docker; git; python,api; apis; aws; azure; ci/cd; database; databases; gcp
+TinNguyen.pdf,cybersecurity,0.364,0.12,3,True,,cybersecurity; networking; security
+TinNguyen.pdf,data_analyst,0.399,0.17,10,False,python; sql,dashboards; data analysis; data visualization; excel; power bi; r; statistical analysis; tableau
+TinNguyen.pdf,data_scientist,0.501,0.3157,14,False,machine learning; python; sql,aws; azure; dashboards; data visualization; deep learning; gcp; nlp; pytorch
+TinNguyen.pdf,devops_engineer,0.433,0.2186,14,False,python,ansible; aws; azure; bash; ci/cd; docker; gcp; grafana
+TinNguyen.pdf,software_engineer,0.4307,0.2153,15,False,python,api; apis; aws; azure; ci/cd; database; databases; docker
+VicenteViera.pdf,cybersecurity,0.364,0.12,3,True,,cybersecurity; networking; security
+VicenteViera.pdf,data_analyst,0.3395,0.085,10,False,dashboards,data analysis; data visualization; excel; power bi; python; r; sql; statistical analysis
+VicenteViera.pdf,data_scientist,0.433,0.2186,14,False,dashboards,aws; azure; data visualization; deep learning; gcp; machine learning; nlp; python
+VicenteViera.pdf,devops_engineer,0.399,0.17,14,False,,ansible; aws; azure; bash; ci/cd; docker; gcp; grafana
+VicenteViera.pdf,software_engineer,0.4307,0.2153,15,False,git,api; apis; aws; azure; ci/cd; database; databases; docker
+a31034a1366155ce1195daaa81712b4e1550870678.pdf,cybersecurity,0.588,0.44,3,True,cybersecurity; security,networking
+a31034a1366155ce1195daaa81712b4e1550870678.pdf,data_analyst,0.28,0.0,10,False,,dashboards; data analysis; data visualization; excel; power bi; python; r; sql
+a31034a1366155ce1195daaa81712b4e1550870678.pdf,data_scientist,0.399,0.17,14,False,,aws; azure; dashboards; data visualization; deep learning; gcp; machine learning; nlp
+a31034a1366155ce1195daaa81712b4e1550870678.pdf,devops_engineer,0.467,0.2671,14,False,monitoring; security,ansible; aws; azure; bash; ci/cd; docker; gcp; grafana
+a31034a1366155ce1195daaa81712b4e1550870678.pdf,software_engineer,0.4625,0.2607,15,False,database; databases,api; apis; aws; azure; ci/cd; docker; gcp; git
+cloud-devops-engineer-1678286366.pdf,cybersecurity,0.476,0.28,3,True,security,cybersecurity; networking
+cloud-devops-engineer-1678286366.pdf,data_analyst,0.28,0.0,10,False,,dashboards; data analysis; data visualization; excel; power bi; python; r; sql
+cloud-devops-engineer-1678286366.pdf,data_scientist,0.433,0.2186,14,False,aws,azure; dashboards; data visualization; deep learning; gcp; machine learning; nlp; python
+cloud-devops-engineer-1678286366.pdf,devops_engineer,0.637,0.51,14,False,ansible; aws; ci/cd; monitoring; prometheus; security; terraform,azure; bash; docker; gcp; grafana; kubernetes; python
+cloud-devops-engineer-1678286366.pdf,software_engineer,0.4625,0.2607,15,False,aws; ci/cd,api; apis; azure; database; databases; docker; gcp; git
+cloud-devops-engineer-resume-example.pdf,cybersecurity,0.476,0.28,3,True,security,cybersecurity; networking
+cloud-devops-engineer-resume-example.pdf,data_analyst,0.28,0.0,10,False,,dashboards; data analysis; data visualization; excel; power bi; python; r; sql
+cloud-devops-engineer-resume-example.pdf,data_scientist,0.433,0.2186,14,False,azure,aws; dashboards; data visualization; deep learning; gcp; machine learning; nlp; python
+cloud-devops-engineer-resume-example.pdf,devops_engineer,0.569,0.4129,14,False,ansible; azure; kubernetes; monitoring; security,aws; bash; ci/cd; docker; gcp; grafana; prometheus; python
+cloud-devops-engineer-resume-example.pdf,software_engineer,0.4625,0.2607,15,False,azure; kubernetes,api; apis; aws; ci/cd; database; databases; docker; gcp
+devops-engineer-resume-example.pdf,cybersecurity,0.364,0.12,3,True,,cybersecurity; networking; security
+devops-engineer-resume-example.pdf,data_analyst,0.4585,0.255,10,False,python; r; sql,dashboards; data analysis; data visualization; excel; power bi; statistical analysis; tableau
+devops-engineer-resume-example.pdf,data_scientist,0.501,0.3157,14,False,aws; python; sql,azure; dashboards; data visualization; deep learning; gcp; machine learning; nlp; pytorch
+devops-engineer-resume-example.pdf,devops_engineer,0.569,0.4129,14,False,ansible; aws; docker; python; terraform,azure; bash; ci/cd; gcp; grafana; kubernetes; monitoring; prometheus
+devops-engineer-resume-example.pdf,software_engineer,0.5259,0.3513,15,False,aws; docker; git; python,api; apis; azure; ci/cd; database; databases; gcp; java
+mark_haase_resume.pdf,cybersecurity,0.588,0.44,3,True,cybersecurity; security,networking
+mark_haase_resume.pdf,data_analyst,0.4585,0.255,10,False,python; r; sql,dashboards; data analysis; data visualization; excel; power bi; statistical analysis; tableau
+mark_haase_resume.pdf,data_scientist,0.637,0.51,14,False,aws; machine learning; nlp; python; sql; statistics; tensorflow,azure; dashboards; data visualization; deep learning; gcp; pytorch; scikit-learn
+mark_haase_resume.pdf,devops_engineer,0.535,0.3643,14,False,aws; monitoring; python; security,ansible; azure; bash; ci/cd; docker; gcp; grafana; kubernetes
+mark_haase_resume.pdf,software_engineer,0.5894,0.442,15,False,api; apis; aws; database; databases; python,azure; ci/cd; docker; gcp; git; java; kubernetes; rest api
+resume (1).pdf,cybersecurity,0.364,0.12,3,True,,cybersecurity; networking; security
+resume (1).pdf,data_analyst,0.399,0.17,10,False,dashboards; python,data analysis; data visualization; excel; power bi; r; sql; statistical analysis; tableau
+resume (1).pdf,data_scientist,0.535,0.3643,14,False,aws; dashboards; gcp; python,azure; data visualization; deep learning; machine learning; nlp; pytorch; scikit-learn; sql
+resume (1).pdf,devops_engineer,0.603,0.4614,14,False,aws; docker; gcp; kubernetes; python; terraform,ansible; azure; bash; ci/cd; grafana; monitoring; prometheus; security
+resume (1).pdf,software_engineer,0.6211,0.4873,15,False,api; apis; aws; docker; gcp; kubernetes; python,azure; ci/cd; database; databases; git; java; rest api; version control
+resume (2).pdf,cybersecurity,0.364,0.12,3,True,,cybersecurity; networking; security
+resume (2).pdf,data_analyst,0.637,0.51,10,False,dashboards; python; r; sql; statistical analysis; tableau,data analysis; data visualization; excel; power bi
+resume (2).pdf,data_scientist,0.569,0.4129,14,False,dashboards; gcp; machine learning; python; sql,aws; azure; data visualization; deep learning; nlp; pytorch; scikit-learn; statistics
+resume (2).pdf,devops_engineer,0.603,0.4614,14,False,bash; ci/cd; gcp; monitoring; python; terraform,ansible; aws; azure; docker; grafana; kubernetes; prometheus; security
+resume (2).pdf,software_engineer,0.6211,0.4873,15,False,api; apis; ci/cd; database; databases; gcp; python,aws; azure; docker; git; java; kubernetes; rest api; version control
+resume.pdf,cybersecurity,0.476,0.28,3,True,networking,cybersecurity; security
+resume.pdf,data_analyst,0.28,0.0,10,False,,dashboards; data analysis; data visualization; excel; power bi; python; r; sql
+resume.pdf,data_scientist,0.433,0.2186,14,False,aws,azure; dashboards; data visualization; deep learning; gcp; machine learning; nlp; python
+resume.pdf,devops_engineer,0.603,0.4614,14,False,ansible; aws; bash; ci/cd; docker; terraform,azure; gcp; grafana; kubernetes; monitoring; prometheus; python; security
+resume.pdf,software_engineer,0.6846,0.578,15,False,api; apis; aws; ci/cd; database; databases; docker; java,azure; gcp; git; kubernetes; python; rest api
+resume_juanjosecarin.pdf,cybersecurity,0.364,0.12,3,True,,cybersecurity; networking; security
+resume_juanjosecarin.pdf,data_analyst,0.637,0.51,10,False,data analysis; data visualization; python; r; sql; tableau,dashboards; excel; power bi; statistical analysis
+resume_juanjosecarin.pdf,data_scientist,0.671,0.5586,14,False,aws; data visualization; machine learning; python; scikit-learn; sql; statistics; tensorflow,azure; dashboards; deep learning; gcp; nlp; pytorch
+resume_juanjosecarin.pdf,devops_engineer,0.535,0.3643,14,False,aws; bash; monitoring; python,ansible; azure; ci/cd; docker; gcp; grafana; kubernetes; prometheus
+resume_juanjosecarin.pdf,software_engineer,0.5577,0.3967,15,False,api; apis; aws; git; python,azure; ci/cd; database; databases; docker; gcp; java; kubernetes
+revised0Blue-Simple-Professional-CV-Resume.pdf,cybersecurity,0.7,0.6,3,True,cybersecurity; networking; security,
+revised0Blue-Simple-Professional-CV-Resume.pdf,data_analyst,0.28,0.0,10,False,,dashboards; data analysis; data visualization; excel; power bi; python; r; sql
+revised0Blue-Simple-Professional-CV-Resume.pdf,data_scientist,0.433,0.2186,14,False,azure,aws; dashboards; data visualization; deep learning; gcp; machine learning; nlp; python
+revised0Blue-Simple-Professional-CV-Resume.pdf,devops_engineer,0.501,0.3157,14,False,azure; monitoring; security,ansible; aws; bash; ci/cd; docker; gcp; grafana; kubernetes
+revised0Blue-Simple-Professional-CV-Resume.pdf,software_engineer,0.4307,0.2153,15,False,azure,api; apis; aws; ci/cd; database; databases; docker; gcp
+tyler_adams_devops_resume.pdf,cybersecurity,0.588,0.44,3,True,networking; security,cybersecurity
+tyler_adams_devops_resume.pdf,data_analyst,0.399,0.17,10,False,python; sql,dashboards; data analysis; data visualization; excel; power bi; r; statistical analysis; tableau
+tyler_adams_devops_resume.pdf,data_scientist,0.535,0.3643,14,False,aws; azure; python; sql,dashboards; data visualization; deep learning; gcp; machine learning; nlp; pytorch; scikit-learn
+tyler_adams_devops_resume.pdf,devops_engineer,0.739,0.6557,14,False,ansible; aws; azure; bash; ci/cd; docker; kubernetes; python,gcp; grafana; monitoring; prometheus
+tyler_adams_devops_resume.pdf,software_engineer,0.7481,0.6687,15,False,api; apis; aws; azure; ci/cd; docker; git; java,database; databases; gcp; version control
+wnd2a5nvoik3n0usnwok.pdf,cybersecurity,0.476,0.28,3,True,security,cybersecurity; networking
+wnd2a5nvoik3n0usnwok.pdf,data_analyst,0.28,0.0,10,False,,dashboards; data analysis; data visualization; excel; power bi; python; r; sql
+wnd2a5nvoik3n0usnwok.pdf,data_scientist,0.501,0.3157,14,False,aws; azure; gcp,dashboards; data visualization; deep learning; machine learning; nlp; python; pytorch; scikit-learn
+wnd2a5nvoik3n0usnwok.pdf,devops_engineer,0.739,0.6557,14,False,ansible; aws; azure; ci/cd; docker; gcp; kubernetes; monitoring,bash; grafana; prometheus; python
+wnd2a5nvoik3n0usnwok.pdf,software_engineer,0.6846,0.578,15,False,aws; azure; ci/cd; database; databases; docker; gcp; git,api; apis; java; python; rest api; version control
