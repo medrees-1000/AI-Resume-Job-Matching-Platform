@@ -26,7 +26,7 @@ from matching.keyword_matcher import extract_keywords, calculate_keyword_match, 
 
 from matching.similarity import calculate_match_score, get_top_matching_chunks
 from matching.hybrid_scorer import calculate_hybrid_score, generate_score_explanation
-from rag.groq_explainer import generate_match_explanation_groq, generate_simple_explanation_fallback
+from explanation.groq_explainer import generate_match_explanation_groq, generate_simple_explanation_fallback
 
 # --- CUSTOM SMOOTH CIRCLE COMPONENT ---
 def render_full_circle_gauge(percent, label, size=150, color="#6366f1", font_size="22px"):
