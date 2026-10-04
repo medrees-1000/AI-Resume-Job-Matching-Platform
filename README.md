@@ -6,6 +6,8 @@ A Streamlit app that scores how well a resume PDF matches a job description, usi
 
 A hybrid score combines semantic similarity (all-mpnet-base-v2 embeddings) with weighted keyword analysis (required vs. preferred skills), and an optional Groq (Llama 3.3) call writes a short human-readable explanation of the result.
 
+![Match results screen](docs/screenshot.png)
+
 ### What is and isn't validated
 
 - **Tested:** unit tests cover the keyword matcher, the hybrid scorer and the PDF text extraction (`pytest`). See [Testing and evaluation](#testing-and-evaluation).
@@ -66,10 +68,17 @@ AI-Resume-Job-Matching-Platform/
 │   ├── jobs/                     # 5 sample job descriptions
 │   └── sample_resumes/           # 25 sample resume PDFs used for evaluation
 │
+├── .streamlit/
+│   └── config.toml               # Theme (single accent colour)
+│
+├── docs/
+│   └── screenshot.png            # Results screen
+│
 ├── tests/
 │   ├── test_keyword_matcher.py   # pytest unit tests
 │   ├── test_hybrid_scorer.py     # pytest unit tests
 │   ├── test_pdf_parser.py        # pytest unit tests
+│   ├── test_groq_explainer.py    # pytest unit tests (fake Groq client)
 │   ├── evaluate_matching.py      # standalone evaluation script (not a pytest test)
 │   └── results/                  # evaluation output (CSV + JSON)
 │
@@ -179,6 +188,8 @@ Missing Preferred: aws, kubernetes
 
 Requires a Groq API key; without one the app uses a simple rule-based fallback explanation.
 
+The model is not hardcoded. `explanation/groq_explainer.py` picks a general-purpose chat model from Groq's live model list (`GET /openai/v1/models`), caches the choice in memory, and falls back to a short built-in list if that call fails. If generation still fails, the UI shows a plain message and the real error goes to the server log, not the page.
+
 ---
 
 ## How to Run This Project
@@ -229,7 +240,7 @@ cp .env.example .env
 
 Get free API key at: **https://console.groq.com** (no credit card required)
 
-**5. Run the application**
+**5. Run the application** (add `?dev=1` to the URL to show the developer panel with extracted keywords and raw scores)
 ```bash
 cd app
 streamlit run streamlit_app.py
