@@ -205,6 +205,8 @@ Keep it professional, specific, and actionable."""
             logger.error("Groq explanation failed with model %s: %s", model, e)
             if _is_model_error(e):
                 reset_model_cache()  # re-resolve from the live list next time
+            elif getattr(e, "status_code", None) in (401, 403):
+                break  # a bad key won't be fixed by trying another model
     
     if not raw_text:
         return _failure_result()

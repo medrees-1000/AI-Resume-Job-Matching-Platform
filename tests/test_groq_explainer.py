@@ -119,3 +119,14 @@ def test_no_api_key_uses_offline_fallback(monkeypatch):
     monkeypatch.delenv("GROQ_API_KEY", raising=False)
     result = ge.generate_match_explanation_groq(["c"], "job", BREAKDOWN)
     assert "error" not in result and result["explanation"]
+
+
+def test_auth_failure_does_not_try_every_model():
+    class AuthError(Exception):
+        status_code = 401
+
+    client = FakeClient(live_models=["llama-3.3-70b-versatile", "llama-3.1-8b-instant"])
+    client._create = lambda model, **kw: (client.used.append(model), (_ for _ in ()).throw(AuthError("bad key")))[1]
+    client.chat = SimpleNamespace(completions=SimpleNamespace(create=client._create))
+    assert run(client)["error"] is True
+    assert len(client.used) == 1
